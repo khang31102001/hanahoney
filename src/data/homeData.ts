@@ -48,50 +48,47 @@ export const videoSection = {
 // homeData.ts (phần mở rộng)
 
 export const textBlockSection = {
-  title: "WHAT MAKES OUR AUSTRALIAN RAW HONEY SO GOOD?",
+  title: "WHY OUR AUSTRALIAN RAW HONEY STANDS ABOVE THE REST",
   content: [
-    `Wondering where to buy raw honey that also tastes amazing? Well, look no further, because you’ve struck gold – liquid gold that is. Rich in taste, with an incredible fragrance and a smooth consistency, Honey For Life is renowned for producing some of the best tasting active honey in Australia and the world. In 2022, our Organic Jarrah Honey and Organic Karri Honey were awarded Gold at the International Organic Food Awards. In 2024 our Desert Mallee won the International Best Taste Awards in USA.`,
+    "Looking for raw honey that’s not only pure but also irresistibly delicious? You’ve just found it – nature’s liquid gold. With its rich, complex flavor, captivating aroma, and silky-smooth texture, Honey For Life is proudly recognized as one of the finest producers of active honey in Australia – and across the globe. Our excellence speaks for itself: in 2022, both our Organic Jarrah Honey and Organic Karri Honey were awarded Gold at the International Organic Food Awards. Most recently, in 2024, our Desert Mallee Honey claimed top honors at the International Best Taste Awards in the USA",
     ,
   ],
   saleText: [`<strong>So, what exactly makes our honey taste so good? Find out below...</strong>`],
 };
 
 export const imageWithText1 = {
-  title: "HAPPY, HEALTHY BEES:THE WESTERN AUSTRALIA ADVANTAGE",
-  description: `Western Australia boasts one of the world's healthiest bee populations, free from several significant bee diseases and pests.
-  This unique advantage positions us as one of only two regions globally with thriving, disease-free bees.
-  The absence of these threats allows our beekeeping operations to remain completely chemical-free,
-  ensuring the utmost purity and quality in our honey.`,
-  imageUrl: "//honeyforlife.com.au/cdn/shop/files/Home_page_images_1080_x_1080_1.png?v=1701932375&width=1500",
+  title: "HEALTHY BEES, PRISTINE ENVIRONMENT – WESTERN AUSTRALIA’S NATURAL EDGE",
+  description: "Western Australia is home to one of the healthiest bee populations in the world—completely free from major bee diseases and pests. This rare natural advantage makes it one of only two regions globally where bees thrive without the need for chemical intervention. As a result, our beekeeping practices remain entirely chemical-free, allowing us to produce honey of unmatched purity, quality, and integrity",
+  imageUrl: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753543116/pexels-solodsha-8105066_eyorez.jpg",
   imageAlt: "Happy, healthy bees",
 };
 
 // homeData.ts (phần mở rộng tiếp theo)
 
 export const imageWithText2 = {
-  title: "100% RAW AND COLD PROCESSED IN ITS PUREST FORM",
-  description: `Our entire range of honey is raw and cold processed through a 100-micron filter. Thanks to Western Australia's disease-free bee population, we avoid the need for heat treatment or pasteurization. This ensures that the active ingredients retain their optimal effectiveness, making our honeys the strongest medicinal honeys available on the shelf.`,
-  imageUrl: "//honeyforlife.com.au/cdn/shop/files/Karri_Marri_mobile.png?v=1698823188&width=1500",
+  title: "PURE, UNTOUCHED, AND COLD-PROCESSED – JUST AS NATURE INTENDED",
+  description: "Our entire honey collection is 100% raw and cold-processed using a fine 100-micron filter—never heated, never pasteurized. Thanks to Western Australia’s pristine, disease-free bee population, there’s no need for thermal treatment, allowing us to preserve all the natural enzymes, antioxidants, and antibacterial properties. The result? Exceptionally potent honeys that stand among the most powerful medicinal honeys available today",
+  imageUrl: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753542430/pexels-anete-lusina-5247996_iwtnsj.jpg",
    imageAlt: "Eucalypt Honeys",
 };
 
 export const imageWithText3 = {
-  title: "OUR HONEY IS PACKED WITH HEALTH BENEFITS",
-  description:   "Our Australian Manuka honey is sustainably managed and sourced from reclaimed farmland, ensuring both environmental responsibility and product purity. Boasting the highest MGO ratings—MGO263, MGO514, MGO829, including the impressive Manuka MGO1500+—our Manuka honey is recognized for its powerful antibacterial properties. This honey is a potent ally in wellness, providing exceptional health benefits and setting a gold standard in the medicinal honey market.",
-  imageUrl: "//honeyforlife.com.au/cdn/shop/files/manuka-mgo400-260-500_3.png?v=1710318454&width=1500",
+  title: "NATURAL GOODNESS IN EVERY DROP OF OUR HONEY",
+  description:   "Our Australian Manuka Hana Honey is sustainably harvested from regenerated farmland, reflecting our commitment to environmental stewardship and product integrity. With some of the highest MGO ratings available — MGO263, MGO514, MGO829, and the exceptional MGO1500+ — this honey stands as a powerhouse of natural antibacterial strength. Renowned for its medicinal qualities, our Manuka honey offers unparalleled wellness support, making it the premium choice for those seeking both purity and performance in every spoonful.",
+  imageUrl: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753542252/pexels-anna-pou-8330360_aqutpo.jpg",
   imageAlt: "Australian Manuka Honey",
 };
 
 export const imageWithText4 = {
   id: "template--14429389520970__d0d11084-e28e-4f42-aea0-10738af6afba",
   image: {
-    src: "//honeyforlife.com.au/cdn/shop/files/Home_page_images_1080_x_1080.png?v=1701931117&width=1500",
+    src: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753541973/pexels-arthurbrognoli-2260933_efayyf.jpg",
     alt: "",
     width: 1080,
     height: 1080,
   },
-  heading: "ANTIOXIDANT-RICH EUCALYPT HONEYS: JARRAH, MARRI, KARRI, BLACKBUTT, AND DESERT MALLEE & MORE...",
-  text: `Sourced from our own beekeeping sites within the pristine, biodiverse old-growth forests of Western Australia, our Eucalypt honeys—<a href="/collections/jarrah-honey" title="Jarrah Honey"><strong>Jarrah</strong></a><strong>, </strong><a href="/collections/marri-karri-honey" title="Marri &amp; Karri Honey"><strong>Marri</strong></a><strong>, </strong><a href="/collections/marri-karri-honey" title="Marri &amp; Karri Honey"><strong>Karri</strong></a><strong>, </strong><a href="/products/super-blackbutt-ta50-500g" title="SUPER BLACKBUTT HONEY TA50+"><strong>Blackbutt</strong></a>, and <a href="/products/organic-desert-mallee-honey" title="DESERT MALLEE HONEY"><strong>Desert Mallee</strong></a>—are produced in an untouched, bio-diverse environment. These exceptional honeys are known for their high <a href="/blogs/sweet-honey-news/honey-ta-rating-vs-mgo-rating-explained" title="Honey MGO VS Honey TA Rating Explained"><strong>Total Activity (TA) ratings</strong></a>, offering some of the highest medicinal and antioxidant properties. The unique flora in these forests creates an ecosystem that supports the production of nutrient-rich, <a href="/collections/super-active-honey" title="Super Active Honey TA50+"><strong>potent honeys</strong></a>, making them a natural choice for health-conscious consumers.`,
+  heading: "NATURE’S MOST POTENT EUCALYPT HONEYS: JARRAH, MARRI, KARRI, BLACKBUTT & BEYOND",
+  text: "Harvested from our own beekeeping sites deep within the untouched, biodiverse old-growth forests of Western Australia, our Eucalypt honeys — Jarrah, Marri, Karri, Blackbutt, and Desert Mallee — are a true gift from nature. Nurtured by the unique flora of these ancient ecosystems, each variety is rich in nutrients and naturally potent. With exceptionally high Total Activity (TA) ratings, these honeys boast powerful antibacterial and antioxidant properties, making them an ideal choice for those who value health, purity, and the extraordinary benefits of raw honey",
   button: {
     text: "SHOP OUR RANGE",
     link: "/collections/shop-all-premium-australian-honey-products"

@@ -1,0 +1,292 @@
+/* Custom Utility Classes */
+
+@layer utilities {
+   
+  /* Honey Color Utilities */
+  .text-honey {
+    color: var(--color-honey-500);
+  }
+
+  .bg-honey {
+    background-color: var(--color-honey-500);
+  }
+
+  .border-honey {
+    border-color: var(--color-honey-500);
+  }
+
+  /* Gradient Utilities */
+  .bg-gradient-honey {
+    background: linear-gradient(135deg, var(--color-honey-400), var(--color-honey-600));
+  }
+
+  .bg-gradient-honey-light {
+    background: linear-gradient(135deg, var(--color-honey-50), var(--color-honey-100));
+  }
+
+  /* Shadow Utilities */
+  .shadow-honey {
+    box-shadow: 0 4px 6px -1px rgb(216 147 31 / 0.1), 0 2px 4px -2px rgb(216 147 31 / 0.1);
+  }
+
+  .shadow-honey-lg {
+    box-shadow: 0 10px 15px -3px rgb(216 147 31 / 0.1), 0 4px 6px -4px rgb(216 147 31 / 0.1);
+  }
+
+  /* Animation Utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .animate-bounce-in {
+    animation: bounceIn 0.6s ease-out;
+  }
+
+  /* Backdrop Utilities */
+  .backdrop-blur-honey {
+    backdrop-filter: blur(8px);
+    background: rgb(255 248 225 / 0.8);
+  }
+
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Layout Utilities */
+  .center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Aspect Ratio Utilities */
+  .aspect-golden {
+    aspect-ratio: 1.618 / 1;
+  }
+
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Scrollbar Utilities */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Opacity Utilities */
+  .opacity-0 {
+    opacity: 0;
+  }
+
+  .opacity-5 {
+    opacity: 0.05;
+  }
+
+  .opacity-10 {
+    opacity: 0.1;
+  }
+
+  .opacity-20 {
+    opacity: 0.2;
+  }
+
+  .opacity-25 {
+    opacity: 0.25;
+  }
+
+  .opacity-30 {
+    opacity: 0.3;
+  }
+
+  .opacity-40 {
+    opacity: 0.4;
+  }
+
+  .opacity-50 {
+    opacity: 0.5;
+  }
+
+  .opacity-60 {
+    opacity: 0.6;
+  }
+
+  .opacity-70 {
+    opacity: 0.7;
+  }
+
+  .opacity-75 {
+    opacity: 0.75;
+  }
+
+  .opacity-80 {
+    opacity: 0.8;
+  }
+
+  .opacity-90 {
+    opacity: 0.9;
+  }
+
+  .opacity-95 {
+    opacity: 0.95;
+  }
+
+  .opacity-100 {
+    opacity: 1;
+  }
+
+  /* Hover Opacity Utilities */
+  .hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .hover\:opacity-10:hover {
+    opacity: 0.1;
+  }
+
+  .hover\:opacity-20:hover {
+    opacity: 0.2;
+  }
+
+  .hover\:opacity-30:hover {
+    opacity: 0.3;
+  }
+
+  .hover\:opacity-40:hover {
+    opacity: 0.4;
+  }
+
+  .hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .hover\:opacity-60:hover {
+    opacity: 0.6;
+  }
+
+  .hover\:opacity-70:hover {
+    opacity: 0.7;
+  }
+
+  .hover\:opacity-80:hover {
+    opacity: 0.8;
+  }
+
+  .hover\:opacity-90:hover {
+    opacity: 0.9;
+  }
+
+  .hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
+  /* Focus Opacity Utilities */
+  .focus\:opacity-0:focus {
+    opacity: 0;
+  }
+
+  .focus\:opacity-40:focus {
+    opacity: 0.4;
+  }
+
+  .focus\:opacity-50:focus {
+    opacity: 0.5;
+  }
+
+  .focus\:opacity-100:focus {
+    opacity: 1;
+  }
+
+  .hexagon {
+    clip-path: polygon(
+      50% 0%,       /* top center — nhọn */
+      100% 25%,     /* top-right */
+      100% 75%,     /* bottom-right */
+      50% 100%,     /* bottom center — nhọn */
+      0% 75%,       /* bottom-left */
+      0% 25%        /* top-left */
+    );
+    overflow: hidden;
+  }
+
+  
+
+}
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Print Utilities */
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-visible {
+    display: block !important;
+  }
+}

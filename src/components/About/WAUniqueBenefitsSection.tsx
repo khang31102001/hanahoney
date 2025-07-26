@@ -1,7 +1,6 @@
-import OptimizedImage from "../ui/optimized-image";
-import img_why_choose from "../../../public/images/banner_header_product.png"
+
 interface Props {
-  img?: any [] | undefined
+  img?: string[] | undefined
 }
 
 const westernAustraliaHighlight = {

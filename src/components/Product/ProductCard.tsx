@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Product } from "@/data/product";
+import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
@@ -21,14 +22,18 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <div className="bg-white rounded-lg overflow-hidden group cursor-pointer">
       <div className="relative overflow-hidden">
         {/* Main Image */}
-        <img
+        <Image
+          width={2000}
+          height={1000}
           src={product.image}
           alt={product.name}
           className="w-full h-64 object-cover transition-opacity duration-500 group-hover:opacity-0"
         />
         
         {/* Hover Image */}
-        <img
+        <Image
+          width={2000}
+          height={1000}
           src={product.hoverImage}
           alt={`${product.name} - view 2`}
           className="absolute inset-0 w-full h-64 object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"

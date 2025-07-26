@@ -1,7 +1,7 @@
 import OptimizedImage from "../ui/optimized-image";
 
 interface Props {
-  img?: any [] | undefined
+  img?: Images[] | undefined
 }
 interface Images {
   id: number;

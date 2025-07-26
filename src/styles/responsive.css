@@ -1,0 +1,235 @@
+/* Responsive Design Utilities */
+
+/* Custom 3XL Breakpoint Utilities */
+@media (min-width: 1800px) {
+  .xl3-container {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  /* Typography for 3XL */
+  .xl3-text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+  .xl3-text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+  .xl3-text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  .xl3-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  /* Spacing for 3XL */
+  .xl3-px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .xl3-py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .xl3-gap-16 {
+    gap: 4rem;
+  }
+  .xl3-space-x-16 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 4rem;
+  }
+  .xl3-space-y-16 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
+  }
+
+  /* Grid for 3XL */
+  .xl3-grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .xl3-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .xl3-grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .xl3-grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  /* Max Width for 3XL */
+  .xl3-max-w-8xl {
+    max-width: 88rem;
+  }
+  .xl3-max-w-9xl {
+    max-width: 96rem;
+  }
+
+  /* Flex for 3XL */
+  .xl3-flex-row {
+    flex-direction: row;
+  }
+  .xl3-flex-col {
+    flex-direction: column;
+  }
+
+  /* Display for 3XL */
+  .xl3-block {
+    display: block;
+  }
+  .xl3-hidden {
+    display: none;
+  }
+  .xl3-flex {
+    display: flex;
+  }
+  .xl3-grid {
+    display: grid;
+  }
+}
+
+/* Responsive Typography Scale */
+@media (min-width: 640px) {
+  .responsive-heading {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-heading {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-heading {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .responsive-heading {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .responsive-heading {
+    font-size: 8rem;
+  }
+}
+
+/* Responsive Container Queries */
+@container (min-width: 320px) {
+  .container-sm\:text-lg {
+    font-size: 1.125rem;
+  }
+}
+
+@container (min-width: 768px) {
+  .container-md\:text-xl {
+    font-size: 1.25rem;
+  }
+}
+
+@container (min-width: 1024px) {
+  .container-lg\:text-2xl {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile First Responsive Utilities */
+.mobile-menu {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.desktop-menu {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-menu {
+    display: block;
+  }
+}
+
+/* Responsive Image Utilities */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .responsive-img {
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (min-width: 1800px) {
+  .responsive-img {
+    border-radius: var(--radius-xl);
+  }
+}
+
+/* Responsive Card Grid */
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1536px) {
+  .card-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1800px) {
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+  }
+}

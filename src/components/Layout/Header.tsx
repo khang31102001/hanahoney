@@ -6,6 +6,14 @@ import Link from 'next/link';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const links = [
+    { id: 1, href: '/', label: 'Home' },
+    { id: 2, href: '/honey', label: 'Honey' },
+    { id: 3, href: '/blog', label: 'Blog' },
+    { id: 4, href: '/about', label: 'About Us' },
+    { id: 5, href: '/contact', label: 'Contact' },
+    { id: 6, href: '/partnerships', label: 'Global PartnerShips' },
+  ]
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -31,27 +39,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 text-black font-semibold">
-            <Link href="/" className=" hover:text-amber-600 transition-colors">
-              Home
-            </Link>
-            <Link href="/honey" className=" hover:text-amber-600 transition-colors">
-              Products
-            </Link>
-
-            <Link href="/blog" className=" hover:text-amber-600 transition-colors">
-              Blog
-            </Link>
-
-            <Link href="/about" className=" hover:text-amber-600 transition-colors">
-              About Us
-            </Link>
-            <Link href="/contact" className=" hover:text-amber-600 transition-colors">
-              Contact
-            </Link>
-
-            <Link href="/partnerships" className="hover:text-amber-600 transition-colors">Global PartnerShips</Link>
+            {links.map((item, index) => {
+              return (
+                <Link
+                  key={index} href={item.href}
+                  className=" hover:text-amber-600 transition-colors">
+                  {item.label}
+                </Link>
+              )
+            })}
           </nav>
-
         </div>
 
         {/* Mobile Navigation Overlay */}
@@ -75,17 +72,13 @@ const Header = () => {
           </div>
           {/* Menu items: chỉ lấy từ Desktop Navigation */}
           <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-lg font-semibold">
-            <Link href="/" className="py-4 border-b border-[#f3c96b]">Home</Link>
-            <Link href="/honey" className="py-4 border-b border-[#f3c96b]">Products</Link>
-            <Link href="/blog" className="py-4 border-b border-[#f3c96b]">Blog</Link>
-            <Link href="/about" className="py-4 border-b border-[#f3c96b]">About Us</Link>
-            <Link href="/contact" className="py-4 border-b border-[#f3c96b]">Contact</Link>
-            <Link href="/global-partnerships" className="py-4 border-b border-[#f3c96b]">Global PartnerShips</Link>
+            {links.map((item, index) => (
+              <Link key={index} href={item.href} className="py-4 border-b border-[#f3c96b]">
+                {item.label}
+              </Link>
+            ))}
           </nav>
-
         </div>
-
-
       </div>
     </header>
   );

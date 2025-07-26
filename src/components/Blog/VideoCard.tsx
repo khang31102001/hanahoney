@@ -1,5 +1,6 @@
 "use client"
 import { Play } from "lucide-react";
+import Image from "next/image";
 // import { useState } from "react";
 
 interface Props {
@@ -21,7 +22,9 @@ const VideoCard = ({ video, onClick }: Props) => {
             <div className="relative overflow-hidden">
                 {/* Thumbnail */}
                 <div className="aspect-video w-full overflow-hidden">
-                    <img
+                    <Image
+                        width={640}
+                        height={360}
                         src={video.thumbnail}
                         alt={video.title}
                         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-110"

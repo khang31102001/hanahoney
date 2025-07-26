@@ -1,7 +1,7 @@
 import OptimizedImage from "../ui/optimized-image";
-import img_why_choose from "../../../public/images/banner_header_product.png"
+
 interface Props {
-    img?: any[] | undefined
+    img?: Images[] | undefined
 }
 interface Images {
     id: number;
@@ -89,17 +89,17 @@ const TotalActivitySection = ({ img }: Props) => {
                     {/* Tầng dưới cùng */}
                     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-4 z-0">
                         <div className="hexagon w-[200px] sm:w-[260px] h-[240px] sm:h-[280px] overflow-hidden">
-                        <OptimizedImage src={images[2].src} className="w-full h-full" />
+                        <OptimizedImage src={images[2].src} alt="" className="w-full h-full" />
                         </div>
                         <div className="hexagon  w-[200px] sm:w-[260px] h-[240px] sm:h-[280px]  overflow-hidden">
-                        <OptimizedImage src={images[3].src} className="w-full h-full" />
+                        <OptimizedImage src={images[3].src} alt="" className="w-full h-full" />
                         </div>
                     </div>
 
                     {/* Tầng trên chồng giữa hai thằng dưới */}
                     <div className="absolute bottom-[200px] sm:bottom-[240px] left-1/2 transform -translate-x-1/2 z-10">
                         <div className="hexagon w-[200px] sm:w-[260px] h-[240px] sm:h-[280px]  overflow-hidden">
-                        <OptimizedImage src={images[1].src} className="w-full h-full" />
+                        <OptimizedImage src={images[1].src} alt="" className="w-full h-full" />
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ const TotalActivitySection = ({ img }: Props) => {
                         <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center p-8">
                             <div className="relative w-full max-w-xl h-auto flex flex-col justify-center gap-8">
                                     <div className="hexagon h-[280px] w-[260px] overflow-hidden">
-                                        <OptimizedImage width="" height="" src={images[2].src} className="w-full h-full" />
+                                        <OptimizedImage width={2000} height={1000} src={images[2].src} alt="" className="w-full h-full" />
                                     </div>
                                     <div className=" h-[280px] w-[260px] mt-auto overflow-hidden">
                                         <h1>The HONEY HANA collection</h1>

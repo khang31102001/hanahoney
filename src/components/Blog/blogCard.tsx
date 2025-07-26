@@ -1,4 +1,5 @@
 import { Blog } from "@/data/blog";
+import Image from "next/image";
 
 interface BlogCardProps {
   blog: Blog;
@@ -10,14 +11,18 @@ const BlogCard = ({ blog }: BlogCardProps) => {
 
       <div className="relative overflow-hidden flex-1">
         {/* Main Image */}
-        <img
+        <Image
+          width={640}
+          height={360}
           src={blog.image}
           alt={blog.name}
           className="w-full h-64 object-cover transition-opacity duration-500 group-hover:opacity-0"
         />
         
         {/* Hover Image */}
-        <img
+        <Image
+          width={640}
+          height={360}
           src={blog.hoverImage}
           alt={`${blog.name} - view 2`}
           className="absolute inset-0 w-full h-64 object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"

@@ -1,18 +1,22 @@
+import type React from "react"
+import { Poppins, Raleway } from "next/font/google"
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
+// ...existing code...
 import { Footer, Header } from "@/components";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+  display: "swap",
+})
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
+const raleway =  Raleway({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-raleway",
+  display: "swap",
+})
 export const metadata: Metadata = {
   title: {
     default: "HANA HONEY - Premium Raw Honey from Australia",
@@ -80,7 +84,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" 
+    className={`${poppins.variable} ${raleway.variable}`} 
+     style={
+        {
+          "--font-heading": "var(--font-poppins), ui-sans-serif, system-ui, sans-serif",
+          "--font-body": "var(--font-raleway), ui-sans-serif, system-ui, sans-serif",
+          "--font-sans": "var(--font-raleway), ui-sans-serif, system-ui, sans-serif",
+        } as React.CSSProperties
+      }
+    >
       <head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -88,7 +101,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
-      <body >
+      <body className="bg-white text-gray-900 antialiased">
         <Header/>
         {children}
         <Footer/>

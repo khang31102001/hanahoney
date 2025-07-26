@@ -12,7 +12,6 @@ import {
   imageWithText3,
   imageWithText4,
   textBlockSlider,
-  textSaleHeroData,
 } from '@/data/homeData';
 
 // import Image from "next/image";
@@ -49,7 +48,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main id="MainContent" className="content-for-layout focus-none" role="main" tabIndex={-1}>
+    <main className="content-for-layout focus-none" tabIndex={-1}>
       <div className="main-site-container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
         {/* Banner */}
         <section
@@ -62,12 +61,12 @@ export default function Home() {
             <img
               src={bannerData.imageUrl}
               alt=""
-              className="w-full h-[700px] object-cover"
+              className="w-full h-[700px] object-cover z-10"
               loading="lazy"
             />
 
             {/* Lớp phủ màu đen trong suốt */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
+            <div className="absolute inset-0 bg-black/40 z-10" />
 
             {/* Overlay với heading + button */}
             <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16 z-20">
@@ -86,9 +85,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-
 
         {/* Rich text 1 */}
         <section className="shopify-section section section-rich-text text-center">

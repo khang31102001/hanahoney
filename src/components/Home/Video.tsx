@@ -1,6 +1,7 @@
 "use client"
 import YouTube from 'react-youtube';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export const videoSection = {
   videoId: "5RLirWPNTLw",
@@ -31,7 +32,7 @@ const VideoSection = () => {
       <div className="relative rounded-xl overflow-hidden shadow-lg ">
         {!isPlaying ? (
           <button onClick={() => setIsPlaying(true)} className="w-full h-full relative group aspect-video">
-            <img src={videoSection.thumbnail} alt="Video thumbnail" className="object-cover w-full h-full" />
+            <Image width={2000} height={1000} src={videoSection.thumbnail} alt="honey video" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="bg-white p-4 rounded-full shadow-md hover:scale-110 transition-transform">

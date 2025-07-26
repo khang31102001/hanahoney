@@ -1,8 +1,8 @@
 // app/blog/page.tsx
 
 import ListBlog from '@/components/Blog/ListBlog';
-import { blog } from '@/data/blog';
-import { ListVideo } from 'lucide-react';
+import ListVideo from '@/components/Blog/ListVideo';
+import { blog, dataVideo } from '@/data/blog';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
 
 export default function Blog() {
     return(
-        <main>
+        <main className="min-h-screen bg-white mt-4">
             <ListBlog data={blog} />
-            <ListVideo/>
+            <ListVideo data={dataVideo}/>
         </main>
     )
 }

@@ -2,6 +2,23 @@ import React from 'react';
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const links = [
+    { id: 2, href: '/honey', label: 'Honey' },
+    { id: 3, href: '/blog', label: 'Blog' },
+    { id: 4, href: '/about', label: 'About Us' },
+    { id: 5, href: '/contact', label: 'Contact' },
+    { id: 6, href: '/partnerships', label: 'PartnerShips' },
+  ];
+  const products = [
+    { id: 1, href: '/honey', label: 'JARRAH Honey' },
+    { id: 2, href: '/honey', label: 'RED GUM Honey' },
+    { id: 3, href: '/honey', label: 'BALCKBUTT Honey' },
+  ];
+  const infor = [
+    { id: 1, icon: <Phone className="h-5 w-5 text-amber-400" />, href: 'tel:+61432189874', label: '(+61) 0432 189 874' },
+    { id: 2, icon: <Mail className="h-5 w-5 text-amber-400" />, href: '', label: 'export@aaan.com.au' },
+    { id: 2, icon: <MapPin className="h-5 w-5 text-amber-400 mt-1" />, href: '', label: "MAREGE NATIVE FOODS PTY LTD Address: 15 Birripa Court, Rosebery, Northern Territory 0832, Australia" },
+  ]
   return (
     <footer id="contact" className="grid bg-[rgb(215,152,51)] text-black rounded-b-2xl max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-16">
@@ -23,26 +40,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#home" className="text-black- hover:text-amber-400 transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#products" className="text-black- hover:text-amber-400 transition-colors">
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-black- hover:text-amber-400 transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-black- hover:text-amber-400 transition-colors">
-                  Contact
-                </a>
-              </li>
+              {links.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.href} className="text-black- hover:text-amber-400 transition-colors">
+                      {item.label}
+                    </a>
+                  </li>
+                )
+              })}
             </ul>
           </div>
 
@@ -50,26 +56,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Products</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="/honey" className="text-black- hover:text-amber-400 transition-colors">
-                  Coffee Blossom Honey
-                </a>
-              </li>
-              <li>
-                <a href="/honey" className="text-black- hover:text-amber-400 transition-colors">
-                  Longan Blossom Honey
-                </a>
-              </li>
-              <li>
-                <a href="/honey" className="text-black- hover:text-amber-400 transition-colors">
-                  Wildflower Honey
-                </a>
-              </li>
-              <li>
-                <a href="/honey" className="text-black- hover:text-amber-400 transition-colors">
-                  Honey Combo
-                </a>
-              </li>
+              {products.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.href} className="text-black- hover:text-amber-400 transition-colors">
+                      {item.label}
+                    </a>
+                  </li>
+                )
+              })}
             </ul>
           </div>
 
@@ -77,38 +72,32 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact Information</h4>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-amber-400" />
-                <span className="text-black-">(+61) 0432 189 874</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-amber-400" />
-                <span className="text-black-">export@aaan.com.au</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-amber-400 mt-1" />
-                <span className="text-black-">
-                  15 Birripa Court, <br/>Rosebery NT 083
-                </span>
-              </div>
+              {infor.map((item, index) => {
+                return (
+                  <div key={index} className="flex items-center space-x-3">
+                    {item.icon}
+                    <span className="text-black-">{item.label}</span>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-black-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex  items-center">
             <p className="text-black-400 text-sm">
               © 2025, HANA&apos;S HONEY / Powered by Shopify
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            {/* <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-black-400 hover:text-amber-400 text-sm transition-colors">
                 Privacy Policy
               </a>
               <a href="#" className="text-black-400 hover:text-amber-400 text-sm transition-colors">
                 Terms of Use
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
