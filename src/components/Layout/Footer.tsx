@@ -59,7 +59,7 @@ const Footer = () => {
               {products.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a href={item.href} className="text-black- hover:text-amber-400 transition-colors">
+                    <a href={item.href} className="text-black hover:text-amber-400 transition-colors">
                       {item.label}
                     </a>
                   </li>
@@ -74,9 +74,11 @@ const Footer = () => {
             <div className="space-y-3">
               {infor.map((item, index) => {
                 return (
-                  <div key={index} className="flex items-center space-x-3">
-                    {item.icon}
-                    <span className="text-black-">{item.label}</span>
+                  <div key={index} className="flex items-start space-x-3">
+                    <div className='pt-2'>
+                      {item.icon}
+                    </div>
+                    <span className="text-black text-sm break-words">{item.label}</span>
                   </div>
                 )
               })}

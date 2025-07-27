@@ -5,16 +5,16 @@ import Image from 'next/image';
 
 export const videoSection = {
   videoId: "5RLirWPNTLw",
-  thumbnail: "//honeyforlife.com.au/cdn/shop/files/HONEYFORLIFE_MARRI_WIDE_EDIT_V4.00_01_11_05.Still008.jpg?v=1707724504&width=1920",
-  title: "The Story of Honey For Life and our honey.",
+  thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848109/hive-1094857_640_bcysvo.jpg",
+  title: "The Story of Hana Honey and our honey.",
 };
 
 const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const handlePlay = () => {
-    setIsPlaying(true);
-  };
+  // const handlePlay = () => {
+  //   setIsPlaying(true);
+  // };
 
   const opts = {
     height: '100%',

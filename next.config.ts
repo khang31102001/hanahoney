@@ -12,7 +12,10 @@ const nextConfig: NextConfig = {
        'png.pngtree.com',
        'maydochuyendung.com',
        "vigift.vn",
-       "res.cloudinary.com"
+       "res.cloudinary.com",
+       "honeyforlife.com.au",
+       "plus.unsplash.com",
+       "media.istockphoto.com"
 
     ],
     

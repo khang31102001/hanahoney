@@ -13,6 +13,7 @@ import {
   imageWithText4,
   textBlockSlider,
 } from '@/data/homeData';
+import Image from 'next/image';
 
 // import Image from "next/image";
 // import styles from "./page.module.css";
@@ -58,7 +59,9 @@ export default function Home() {
 
           {/* Background Image */}
           <div className="relative">
-            <img
+            <Image
+              width={2000}
+              height={700}
               src={bannerData.imageUrl}
               alt=""
               className="w-full h-[700px] object-cover z-10"
@@ -157,7 +160,9 @@ export default function Home() {
               {/* Image */}
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-amber-200 to-orange-300 shadow-2xl">
-                  <img
+                  <Image
+                    width={2000}
+                    height={2000}
                     src={imageWithText1.imageUrl}
                     alt={imageWithText1.imageAlt}
                     className="w-full h-full object-cover"
@@ -175,7 +180,9 @@ export default function Home() {
               {/* Image */}
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-100 to-orange-300 shadow-2xl">
-                  <img
+                  <Image
+                    width={2000}
+                    height={2000}
                     src={imageWithText2.imageUrl}
                     alt={imageWithText2.imageAlt}
                     className="w-full h-full object-cover"
@@ -215,7 +222,9 @@ export default function Home() {
               {/* Image */}
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-100 to-orange-300 shadow-2xl">
-                  <img
+                  <Image
+                    width={2000}
+                    height={2000}
                     src={imageWithText3.imageUrl}
                     alt={imageWithText3.imageAlt}
                     className="w-full h-full object-cover"
@@ -235,7 +244,7 @@ export default function Home() {
               {/* Image */}
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-100 to-orange-300 shadow-2xl">
-                  <img
+                  <Image
                     src={imageWithText4.image.src}
                     alt={imageWithText4.image.alt}
                     width={imageWithText4.image.width}

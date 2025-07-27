@@ -1,5 +1,6 @@
 export interface Blog {
     id: number;
+    slug: string;
     name: string;
     image: string;
     hoverImage: string;
@@ -16,6 +17,7 @@ interface VideoData {
 export const blog: Blog[] = [
     {
         id: 1,
+        slug: "what-is-active-honey-understanding-total-activity-ta-rating",
         name: "WHAT IS ACTIVE HONEY? UNDERSTANDING TOTAL ACTIVITY (TA) RATING",
         image: "https://honeyforlife.com.au/cdn/shop/articles/2020.11.27_Honey_For_Life-1.jpg?v=1744190419&width=1500",
         hoverImage: "https://plus.unsplash.com/premium_photo-1663957861996-8093b48a22e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9uZXl8ZW58MHx8MHx8fDA%3D",
@@ -41,6 +43,7 @@ export const blog: Blog[] = [
     {
         id: 2,
         name: "USING HONEY AS A NATURAL SKINCARE REMEDY: DIY TREATMENTS",
+        slug: "using-honey-as-a-natural-skincare-remedy-diy-treatments",
         image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751026912/01874586-e202-45ce-9075-2f4673170065_ny18ax.jpg",
         hoverImage: "https://images.unsplash.com/photo-1545246909-b4e087f05214?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvbmV5fGVufDB8fDB8fHww",
         content: `
@@ -155,6 +158,7 @@ export const blog: Blog[] = [
     {
         id: 3,
         name: "DESERT MALLEE HONEY: AWARD-WINNING FLAVOUR FROM THE HEART OF AUSTRALIA",
+        slug: "desert-mallee-honey-award-winning-flavour-from-the-heart-of-australia",
         image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751026921/480487812_122223334028211632_5476122042152771841_n_vcunwl.jpg",
         hoverImage: "https://images.unsplash.com/photo-1654515722385-c684c5331c04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvbmV5fGVufDB8fDB8fHww",
         content: `
@@ -190,6 +194,7 @@ export const blog: Blog[] = [
     {
         id: 4,
         name: "HONEY FOR DOGS",
+        slug: "honey-for-dogs",
         image: "https://honeyforlife.com.au/cdn/shop/articles/can-dogs-eat-honey.jpg?v=1727770695",
         hoverImage: "https://plus.unsplash.com/premium_photo-1664273586569-08c3a0c205aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvbmV5Y29tYnxlbnwwfHwwfHx8MA%3D%3D",
         content: `
@@ -218,6 +223,7 @@ export const blog: Blog[] = [
     {
         id: 5,
         name: "THE HEALTH BENEFITS OF RAW HONEY: A SUPERFOOD FOR EVERYDAY WELLNESS",
+        slug: "the-health-benefits-of-raw-honey-a-superfood-for-everyday-wellness",
         image: "https://plus.unsplash.com/premium_photo-1664273586932-ab870d61f7e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9uZXl8ZW58MHx8MHx8fDA%3D",
         hoverImage: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZXl8ZW58MHx8MHx8fDA%3D",
         content: `
@@ -255,6 +261,7 @@ export const blog: Blog[] = [
     {
         id: 6,
         name: "THE SWEET BENEFITS OF HONEY WATER: A NATURAL ELIXIR",
+        slug: "the-sweet-benefits-of-honey-water-a-natural-elixir",
         image: "https://images.unsplash.com/photo-1471943311424-646960669fbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbmV5fGVufDB8fDB8fHww",
         hoverImage: "https://images.unsplash.com/photo-1536788567643-8c2368376526?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvbmV5fGVufDB8fDB8fHww",
         content: `
@@ -306,6 +313,7 @@ export const blog: Blog[] = [
     {
         id: 7,
         name: "Honeycomb Raw",
+         slug: "honeycomb-raw",
         image: "https://media.istockphoto.com/id/694546042/photo/honey-with-honeycombs-in-a-jar.webp?a=1&b=1&s=612x612&w=0&k=20&c=F9DIox6vgRS9dl6k2WwhF74nlh5Rn9VOMv_uxQdx3m4=",
         hoverImage: "https://media.istockphoto.com/id/183354852/photo/pot-of-honey.webp?a=1&b=1&s=612x612&w=0&k=20&c=48aXe_BW3SBXe-JCk3cvlMk06snITNxC4iPrGgt2_2k=",
         content: `
@@ -322,6 +330,7 @@ export const blog: Blog[] = [
     {
         id: 8,
         name: "Acacia Honey",
+        slug: "acacia-honey",
         image: "https://media.istockphoto.com/id/842769074/photo/sweet-honeycomb-and-wooden-honey-dripping.webp?a=1&b=1&s=612x612&w=0&k=20&c=3Wi2g_Z-_DcfHkulYM6ax0-niJNSIJ8Q3I1cXNlIA6U=",
         hoverImage: "https://media.istockphoto.com/id/2167178713/photo/iced-honey-aiyu-jelly-green-tea-with-sugar-pot-and-spoon-served-in-disposable-glass-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=mGLto59bmO4nV6D6-jEjE72Fb7oBvsB2GyZtYZRjAso=",
         content: `
@@ -337,6 +346,7 @@ export const blog: Blog[] = [
     },
     {
         id: 9,
+        slug: "honey-gift-set",
         name: "Honey Gift Set",
         image: "https://media.istockphoto.com/id/157394621/vi/anh/m%E1%BA%ADt-ong.jpg?s=612x612&w=0&k=20&c=WlESNMck_HvAL8G0LsL03dJlpEzUqclvz7eJ76Q8lVg=",
         hoverImage: "https://media.istockphoto.com/id/157394621/vi/anh/m%E1%BA%ADt-ong.jpg?s=612x612&w=0&k=20&c=WlESNMck_HvAL8G0LsL03dJlpEzUqclvz7eJ76Q8lVg=",
@@ -348,6 +358,7 @@ export const blog: Blog[] = [
     },
     {
         id: 10,
+        slug: "wildflower-honey",
         name: "Wildflower Honey",
         image: "https://media.istockphoto.com/id/183354852/vi/anh/n%E1%BB%93i-m%E1%BA%ADt-ong.jpg?s=612x612&w=0&k=20&c=nSrnCfSBk2MQItqV24S4sFkNCKSJaE130lL4J9G_4FE=",
         hoverImage: "https://media.istockphoto.com/id/2173119049/vi/anh/c%E1%BA%ADn-c%E1%BA%A3nh-ng%C6%B0%E1%BB%9Di-ph%E1%BB%A5-n%E1%BB%93-th%C3%AAm-m%E1%BA%ADt-ong-v%C3%A0o-t%C3%A1ch-tr%C3%A0.jpg?s=612x612&w=0&k=20&c=RxdjjWr3iol_mmTWsJmkcuntzewfHhd6exr_zQf2r4k=",
