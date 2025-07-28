@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import CustomLink from '../naviagtion/custom-link';
 // import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -41,11 +42,11 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8 text-black font-semibold">
             {links.map((item, index) => {
               return (
-                <Link
+                <CustomLink
                   key={index} href={item.href}
                   className=" hover:text-amber-600 transition-colors">
                   {item.label}
-                </Link>
+                </CustomLink>
               )
             })}
           </nav>
@@ -73,9 +74,9 @@ const Header = () => {
           {/* Menu items: chỉ lấy từ Desktop Navigation */}
           <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-lg font-semibold">
             {links.map((item, index) => (
-              <Link key={index} href={item.href} className="py-4 border-b border-[#f3c96b]">
+              <CustomLink key={index} href={item.href} className="py-4 border-b border-[#f3c96b]">
                 {item.label}
-              </Link>
+              </CustomLink>
             ))}
           </nav>
         </div>
