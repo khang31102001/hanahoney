@@ -2,11 +2,17 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-import CustomLink from '../naviagtion/custom-link';
+import CustomLink from '../loading-spiner/custom-link';
+import { usePathname } from 'next/navigation';
 // import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isActiveLink = (href: string) => {
+    return pathname === href;
+  }
+
   const links = [
     { id: 1, href: '/', label: 'Home' },
     { id: 2, href: '/honey', label: 'Honey' },
@@ -18,9 +24,9 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="announcement-bar__message  flex flex-col items-center text-xl bg-black w-full text-white py-3 h-13">
+      {/* <div className="announcement-bar__message  flex flex-col items-center text-xl bg-black w-full text-white py-3 h-13">
         <p>Can you contact to us: (+61) 0432 189 874</p>
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-row md:flex-col justify-center items-center  ">
 
         {/* Logo */}
@@ -44,8 +50,9 @@ const Header = () => {
               return (
                 <CustomLink
                   key={index} href={item.href}
-                  className=" hover:text-amber-600 transition-colors">
+                  className={`group relative text-2xl ${isActiveLink(item.href)? "text-amber-500": "text-gray-900 "} hover:text-amber-600 transition-colors duration-300`}>
                   {item.label}
+                  <span className={`absolute left-0 bottom-0 h-[4px] rounded-2xl bg-amber-600 transition-all duration-300 group-hover:w-full ${isActiveLink(item.href) ? "w-full ": "w-0 group-hover:w-full "}  `}></span>
                 </CustomLink>
               )
             })}
@@ -74,7 +81,7 @@ const Header = () => {
           {/* Menu items: chỉ lấy từ Desktop Navigation */}
           <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-lg font-semibold">
             {links.map((item, index) => (
-              <CustomLink key={index} href={item.href} className="py-4 border-b border-[#f3c96b]">
+              <CustomLink key={index} href={item.href} className="bg-amber-600 py-4 border-b border-[#f3c96b]">
                 {item.label}
               </CustomLink>
             ))}

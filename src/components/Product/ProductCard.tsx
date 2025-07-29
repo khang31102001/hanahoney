@@ -41,7 +41,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       </div>
       
       {/* Black footer with product info */}
-      <div className="bg-black text-white flex flex-col justify-between  p-4">
+      <div className="bg-black text-white flex flex-col justify-between h-[200px]  p-4">
         <h3 className="text-lg font-bold text-center mb-2 uppercase tracking-wide text-white line-clamp-2  min-h-12">
           {product.name}
         </h3>

@@ -107,17 +107,17 @@ const ContactInfor = () => {
             <h1 className="text-center text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-wide">Contact Us</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="mb-5 w-full">
-                <input className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900" type="text" placeholder="Name" />
+                <input className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900 p-2" type="text" placeholder="Name" />
               </div>
               <div className="mb-5 w-full">
-                <input className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900" type="email" placeholder="Email" />
+                <input className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900 p-2" type="email" placeholder="Email" />
               </div>
             </div>
             <div className="mb-5 w-full">
-              <input className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900" type="text" placeholder="Phone" />
+              <input className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900 p-2" type="text" placeholder="Phone" />
             </div>
             <div className="mb-5 w-full">
-              <textarea className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900" rows={5} placeholder="Message" />
+              <textarea className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900 p-2" rows={5} placeholder="Message" />
             </div>
             <div className="text-center bg-black text-white mb-5 w-full cursor-pointer">
               <button className="text-xl text-white px-6 py-4">Send</button>

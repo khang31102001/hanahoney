@@ -42,7 +42,7 @@ export const products: Product[] = [
     },
     {
         id: 4,
-        name: "Jarrah Honey TA49+",
+        name: "Jarrah Honey TA49.6+",
         price: "From 1.500.000 VND",
         volume: "250gr",
         image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753623702/cecc7fc985a60cf855b7_wh4lki.jpg",
@@ -52,7 +52,7 @@ export const products: Product[] = [
     },
     {
         id: 5,
-        name: "Jarrah Honey TA49+",
+        name: "Jarrah Honey TA49.6+",
         price: "From 890.000 VND",
         volume: "500gr",
         image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753623702/cecc7fc985a60cf855b7_wh4lki.jpg",
@@ -62,7 +62,7 @@ export const products: Product[] = [
     },
     {
         id: 6,
-        name: "Jarrah Honey TA49+",
+        name: "Jarrah Honey TA49.6+",
         price: "From 888.000 VND",
         volume: "1kg",
         image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753623702/cecc7fc985a60cf855b7_wh4lki.jpg",

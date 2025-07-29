@@ -20,7 +20,7 @@ const ListBlog = ({data}: BlogProps)=> {
         setCurrentPage(page);
     };
 
-    const handleBlogClick = (slug: number) => {
+    const handleBlogClick = (slug: string) => {
         navigate.push(`/blog/${slug}`);
     };
     if(!currentBlogs) return null;
@@ -31,7 +31,7 @@ const ListBlog = ({data}: BlogProps)=> {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-8">
                         {currentBlogs.map((item, index) => {
                             return (
-                                <div key={index} onClick={() => handleBlogClick(item.id)} className="cursor-pointer">
+                                <div key={index} onClick={() => handleBlogClick(item.slug)} className="cursor-pointer">
                                     <BlogCard blog={item} />
                                 </div>
                             )
