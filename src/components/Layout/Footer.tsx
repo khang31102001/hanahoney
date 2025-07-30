@@ -20,7 +20,7 @@ const Footer = () => {
     { id: 2, icon: <MapPin className="h-5 w-5 text-amber-400 mt-1" />, href: '', label: "MAREGE NATIVE FOODS PTY LTD Address: 15 Birripa Court, Rosebery, Northern Territory 0832, Australia" },
   ]
   return (
-    <footer id="contact" className="grid bg-[rgb(215,152,51)] text-black rounded-b-2xl max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+    <footer id="contact" className="grid bg-[rgb(215,152,51)] text-black max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}

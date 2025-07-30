@@ -50,7 +50,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="content-for-layout focus-none" tabIndex={-1}>
-      <div className="main-site-container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
+      <div className="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40 py-10">
         {/* Banner */}
         <section
           className="relative overflow-hidden rounded-t-xl"

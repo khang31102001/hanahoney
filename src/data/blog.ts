@@ -19,8 +19,8 @@ export const blog: Blog[] = [
     id: 2,
     slug: "is-honey-halal-clarifying-honey-in-islamic-diet",
     name: "IS HONEY HALAL? CLARIFYING HONEY IN THE ISLAMIC DIET",
-    image: "",
-    hoverImage: "",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848113/honey-extraction-7339822_640_zowy2a.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848113/honey-823614_640_fkdifb.jpg",
     content: `
     <h2>Is Honey Considered Halal in Islam?</h2>
     <p>Yes, <strong>honey is considered Halal</strong> (permissible) in Islam. It is a natural product made by bees from the nectar of flowers and does not involve any Haram (forbidden) ingredients or processes. In fact, honey is mentioned in the Quran as a source of healing and nourishment.</p>
@@ -48,13 +48,12 @@ export const blog: Blog[] = [
     <p><strong>Honey is 100% Halal</strong> when it is pure and free from non-permissible additives. It is not only allowed in Islam but highly encouraged for its health benefits, as recognized in both religious texts and modern science. Whether used as food, medicine, or skincare—it is a gift from nature and fully compliant with Halal dietary laws.</p>
   `
   },
-
   {
     id: 3,
     name: "CAN DIABETIC PEOPLE CONSUME HONEY? FACTS & GUIDELINES",
     slug: "can-diabetics-consume-honey-facts-and-guidelines",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751027012/diabetes-honey-awareness_qfhmdg.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1615472487559-7d3b4a45668d?ixlib=rb-4.0.3&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848112/honey-extractors-1568943_640_dlbvk8.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848109/honey-352205_640_hef3ge.jpg",
     content: `
     <h2>Can Diabetics Consume Honey?</h2>
     <p>It’s a common question: <strong>“Can people with diabetes eat honey?”</strong> The answer is—<b>yes, but with caution</b>. While honey is a natural sweetener, it still contains sugar and carbohydrates, which can affect blood glucose levels. However, when used mindfully, certain types of honey may be a better alternative to refined sugar for some individuals with diabetes.</p>
@@ -101,14 +100,13 @@ export const blog: Blog[] = [
 
     <p class="text-xs italic text-gray-500 mt-6">Disclaimer: This article is for educational purposes only and does not replace professional medical advice. Always consult your doctor before making changes to your diet, especially if you are managing a chronic condition like diabetes.</p>
   `
-  }
-  ,
+  },
   {
     id: 4,
     name: "HANA HONEY – POWERFUL NATURAL HONEY WITH TA60+ ACTIVITY",
     slug: "hana-honey-natural-antibacterial-honey-ta60",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751027402/hana-honey-ta60_qxnpqq.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1626122356630-e23fd2f82355?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGhvbmV5fGVufDB8fDB8fHww",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848107/flower-5001083_640_jexauu.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751026921/480487812_122223334028211632_5476122042152771841_n_vcunwl.jpg",
     content: `
     <h2>HANA HONEY – Natural Strength with TA60+ Activity</h2>
     <p><strong>Introducing Hana Honey – one of Australia’s most powerful raw honeys, boasting a Total Activity (TA) rating of up to 60+</strong>. This rare and potent honey is a testament to the untouched beauty of Western Australia and the strength of nature’s antibacterial power.</p>
@@ -160,8 +158,8 @@ export const blog: Blog[] = [
     id: 5,
     name: "WHY RAW HONEY IS BETTER THAN PROCESSED HONEY – THE TRUTH BEHIND THE BUZZ",
     slug: "why-raw-honey-is-better-than-processed-honey",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751027599/raw-vs-processed-honey-comparison_zibxu6.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1603727209823-2f3ec6bb3be4?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885890/beehive-3703426_640_hl9jqe.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885890/honey-1637114_640_fkv1tu.jpg",
     content: `
     <h2>Why Raw Honey is Better Than Processed Honey – The Truth Behind the Buzz</h2>
     <p><strong>Not all honey is created equal.</strong> While all honey may look golden and sweet, there’s a big difference between raw honey and the processed version often found on supermarket shelves. At Hana Honey, we believe in the power of pure, raw honey—and here’s why you should too.</p>
@@ -209,8 +207,8 @@ export const blog: Blog[] = [
     id: 6,
     name: "CAN HONEY HELP YOU LOSE WEIGHT? FACTS, TIPS & BEST USAGE",
     slug: "can-honey-help-with-weight-loss-benefits-and-uses",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751028032/honey-weight-loss_b9qzaz.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1505253210343-d4a2b7830a6b?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885207/local-honey-9061428_640_fpvdmy.png",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885200/wild-bee-8058943_640_cou7cl.jpg",
     content: `
     <h2>Can Honey Help You Lose Weight? The Truth You Need to Know</h2>
     <p>Many people ask, <strong>"Can honey help with weight loss?"</strong> The short answer is: <b>yes, when used correctly</b>. While honey is still a form of sugar, it’s natural, nutrient-rich, and offers health benefits that processed sugar can’t match. In fact, replacing refined sugar with raw honey may support your metabolism, energy levels, and fat-burning potential.</p>
@@ -257,8 +255,8 @@ export const blog: Blog[] = [
     id: 7,
     name: "SHOULD YOU DRINK HONEY IN THE MORNING? DETOX, ENERGY & BEAUTY BENEFITS",
     slug: "should-you-drink-honey-in-the-morning-benefits",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751028124/honey-morning-benefits_wxhq8q.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1508182311003-e288b25193e6?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885554/honey-1089508_640_jd9w32.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885555/honeycomb-827475_640_h2goiz.jpg",
     content: `
     <h2>Should You Drink Honey in the Morning? Here's What Happens</h2>
     <p>Waking up to a warm glass of honey water might sound simple—but it’s a ritual loved by many health enthusiasts, nutritionists, and even beauty gurus. <strong>So, is drinking honey in the morning really that good for you?</strong> The answer is: <b>Absolutely, yes!</b> Here’s why more and more people are starting their day with this golden liquid.</p>
@@ -302,8 +300,8 @@ export const blog: Blog[] = [
     id: 8,
     name: "BOOST YOUR IMMUNITY NATURALLY – HOW HONEY SUPPORTS YOUR DEFENSE SYSTEM",
     slug: "boost-immunity-with-honey-natural-antibacterial-benefits",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751028401/honey-immunity-benefits_wkdkzj.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1603185193508-6d61c972f142?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885554/honey-8045459_640_eqdjzl.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885198/bee-1726659_640_wfwpsi.jpg",
     content: `
     <h2>Boost Your Immunity Naturally – How Honey Supports Your Body’s Defenses</h2>
     <p>With changing seasons and constant exposure to viruses, a strong immune system is more important than ever. One of nature’s most trusted immune boosters? <strong>Raw honey.</strong></p>
@@ -349,7 +347,7 @@ export const blog: Blog[] = [
     name: "DOES HONEY EXPIRE? SHELF LIFE & STORAGE TIPS YOU NEED TO KNOW",
     slug: "does-honey-expire-shelf-life-and-storage-tips",
     image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751028599/honey-shelf-life_vuv9e0.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848105/267036_tiny_xofolw.mp4",
     content: `
     <h2>Does Honey Expire? Shelf Life & Storage Tips You Need to Know</h2>
     <p>If you’ve found a jar of honey tucked away in your pantry for years, you might wonder: <strong>“Can I still use this?”</strong> The good news is — <b>real honey doesn’t expire</b> when stored properly.</p>
@@ -400,8 +398,8 @@ export const blog: Blog[] = [
     id: 10,
     name: "HAVE YOU EVER TASTED REAL NATURAL HONEY? LET’S FIND OUT",
     slug: "have-you-ever-tasted-real-natural-honey-honeyhana",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751028715/honeyhana-natural-raw-honey_pure_zifn7y.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1614108527868-69e4a17a4f4f?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848116/taiwan-3511017_640_kumugm.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885890/honeycomb-1564958_640_thwy1o.jpg",
     content: `
     <h2>Have You Ever Tasted REAL Natural Honey? Let’s Find Out</h2>
     <p>With so many jars labeled “100% pure honey” on the shelves, you might assume you’ve tasted real honey before. But <strong>what if we told you that most of them aren’t truly natural?</strong></p>
@@ -450,11 +448,11 @@ export const blog: Blog[] = [
     id: 11,
     name: "WILD HONEY VS FARMED HONEY: WHICH IS HEALTHIER AND HOW TO TELL THE DIFFERENCE",
     slug: "wild-honey-vs-farmed-honey-health-benefits-and-comparison",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
-    hoverImage: "https://images.unsplash.com/photo-1519148246717-30021a090209",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885197/apiary-1866740_640_rrewww.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885891/honeybee-3999664_640_mu8otl.jpg",
     content: `
     <h2>Wild Honey vs Farmed Honey: Which Is Better?</h2>
-    <p>On the surface, wild honey (mật ong rừng) and farmed honey (mật ong nuôi) may look similar—but <strong>the way they are sourced makes a huge difference in quality, purity, and health benefits</strong>.</p>
+    <p>On the surface, wild honey  and farmed honey  may look similar—but <strong>the way they are sourced makes a huge difference in quality, purity, and health benefits</strong>.</p>
 
     <h3>Key Differences Between Wild Honey and Farmed Honey</h3>
     <ul>
@@ -502,8 +500,8 @@ export const blog: Blog[] = [
     id: 12,
     name: "WHY IS REAL HONEY SO EXPENSIVE? AND IS IT WORTH IT?",
     slug: "why-real-honey-is-expensive-and-worth-it",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751030002/real-honey-worth-it_ogxzco.jpg",
-    hoverImage: "https://images.unsplash.com/photo-1595243749837-f63fd7ef9271?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=500",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885890/beekeeper-941688_640_lukot1.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885889/bees-3601859_640_awhbu1.jpg",
     content: `
     <h2>Why Is Real Honey So Expensive? And Is It Worth It?</h2>
     <p>Ever wonder why some jars of honey cost 5x more than others? Is it just branding? Or is there something deeper — something real — inside?</p>
@@ -553,7 +551,66 @@ export const blog: Blog[] = [
 
     <p class="text-xs italic text-gray-500 mt-6">Note: Always read the label. Crystallization is a sign of purity. Not suitable for infants under 12 months.</p>
   `
+  },
+  {
+    id: 13,
+    name: "THE TRUE VALUE OF REAL HONEY – WHY IT COSTS MORE AND WHY IT MATTERS",
+    slug: "true-value-of-real-honey-honeyhana",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885891/honeybee-3999664_640_mu8otl.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885889/bees-6147460_640_qctdfk.jpg",
+    content: `
+    <h2>The True Value of Real Honey – Why It Costs More and Why It Matters</h2>
+    <p>You’ve seen it before: a jar of honey at the supermarket for $8… and another for $48. Both look golden. Both say “pure.” So, why the huge price gap? <strong>The answer lies in what you can’t see on the label—but your body will feel it.</strong></p>
+
+    <p>At <strong>HoneyHana</strong>, we believe in full transparency. And once you understand what goes into every spoon of raw, active honey, you’ll never look at cheap honey the same way again.</p>
+
+    <h3>1. Most Commercial “Honey” Isn’t What You Think</h3>
+    <p>According to global studies, up to <strong>1 in 3 jars of honey</strong> sold worldwide is either <strong>mixed with sugar syrup</strong> or <strong>overprocessed</strong>. These imitations may look the same but contain <em>none</em> of the health benefits real honey offers.</p>
+
+    <h3>2. Nature Doesn’t Rush Perfection</h3>
+    <ul>
+      <li>🐝 Bees only make real honey during short blooming seasons.</li>
+      <li>🌸 Rare floral sources like Jarrah, Redgum, or Mallee trees only bloom once a year.</li>
+      <li>🔥 Droughts, bushfires, and climate change impact bee habitats and harvest yield.</li>
+    </ul>
+    <p><strong>Supply is limited. Quality cannot be rushed.</strong></p>
+
+    <h3>3. True Honey Is Gently Handled — Never Cooked</h3>
+    <p>Unlike mass-market brands, <strong>HoneyHana honey is never heated, ultrafiltered, or diluted</strong>. That means it retains all the naturally occurring:</p>
+    <ul>
+      <li>✅ Enzymes</li>
+      <li>✅ Antioxidants</li>
+      <li>✅ Pollen & Propolis particles</li>
+      <li>✅ Bioactive antibacterial compounds</li>
+    </ul>
+
+    <h3>4. Tested for Potency – TA20+ to TA60+</h3>
+    <p>All of our honey is lab-tested and certified for its <strong>Total Activity (TA)</strong>—a scientific measure of antibacterial strength. <br>
+    TA60+ is considered <em>exceptional</em>, on par with top-tier Manuka honey, and is ideal for immunity, healing, and skin wellness.</p>
+
+    <h3>5. Every Jar Is a Work of Nature (and Love)</h3>
+    <ul>
+      <li>🍯 Harvested in small batches from native forests</li>
+      <li>👩‍🌾 Hand-poured and minimally strained — no machines, no shortcuts</li>
+      <li>📦 Bottled with purpose — to preserve every drop of its raw natural energy</li>
+    </ul>
+
+    <h3>Is It Worth the Price?</h3>
+    <p>Let’s put it this way: would you trade your health for a few dollars saved on sugar syrup?</p>
+    <p>With HoneyHana’s raw honey, <strong>you’re not just buying a sweetener—you’re investing in real nourishment</strong> that supports digestion, immunity, skin health, and more. One spoon a day is all it takes to feel the difference.</p>
+
+    <h3>What Our Customers Say</h3>
+    <ul>
+      <li>⭐️⭐️⭐️⭐️⭐️ “Once you taste real honey, you can never go back. My energy levels have improved, and my skin glows!” — Trang L.</li>
+      <li>⭐️⭐️⭐️⭐️⭐️ “TA60+ helped me recover from sore throats faster than any syrup ever did. This is real medicine from nature.” — Daniel M.</li>
+    </ul>
+
+    <p><strong>Don’t just eat honey — experience it. Let HoneyHana show you the power of raw, active, natural honey.</strong></p>
+
+    <p class="text-xs italic text-gray-500 mt-6">Disclaimer: Not suitable for infants under 12 months. Crystallization is natural in raw honey and does not affect quality.</p>
+  `
   }
+
 
 ];
 
@@ -561,49 +618,55 @@ export const dataVideo: VideoData[] = [
   {
     id: 1,
     title: "Video 1",
-    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848106/1073-142790237_tiny_czazos.mp4",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753882780/fee4c979-cc31-4d67-8ebd-82c96bc1f1da_rr7vyf.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848108/bees-5028160_640_spf20x.jpg"
   },
   {
     id: 2,
     title: "Video 2",
-    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848103/31854-389248716_tiny_ofeumj.mp4",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753882776/228124b3-8360-4b37-b0a6-33faa8ccccd0_se7kfk.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848113/honey-bees-326334_640_uuk5yu.jpg"
   },
   {
     id: 3,
     title: "Video 3",
-    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848159/35619-406256504_tiny_i6iq4k.mp4",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753882999/f3507123-d42b-4817-86a2-4c7b5b6d5681_1_w0m8n8.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848109/hive-1094857_640_bcysvo.jpg"
   },
   {
     id: 4,
     title: "Video 4",
-    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848162/178049-858827907_tiny_mwwfyd.mp4",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753882845/9356a9e3-bf21-46be-bf5f-1437f6f0cb43_mvyqgq.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848103/beer-5433299_640_scfz7q.jpg"
   },
   {
     id: 5,
     title: "Video 5",
-    src: "https://www.youtube.com/embed/VIDEO_ID_3",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753882845/9356a9e3-bf21-46be-bf5f-1437f6f0cb43_mvyqgq.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848105/beekeeper-4426003_640_yiety1.jpg"
   },
   {
     id: 6,
     title: "Video 6",
-    src: "https://www.youtube.com/embed/VIDEO_ID_3",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753883184/b09b4a84-310c-4c21-8769-08300ff2c0f8_ehetqb.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848105/bee-9500879_640_vlvaal.webp"
   },
   {
     id: 7,
     title: "Video 7",
-    src: "https://www.youtube.com/embed/VIDEO_ID_3",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1753882865/fe2a5b7b-cf57-4eee-9285-04fedd948a5e_q8xkst.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848105/beekeeper-4426003_640_yiety1.jpg"
   },
   {
     id: 8,
     title: "Video 8",
-    src: "https://www.youtube.com/embed/VIDEO_ID_3",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848159/35619-406256504_tiny_i6iq4k.mp4",
     thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848102/beekeeper-2650664_640_h2fg2v.jpg"
+  },
+  {
+    id: 9,
+    title: "Video 9",
+    src: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848162/178049-858827907_tiny_mwwfyd.mp4",
+    thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848108/bees-7996596_640_m7jqjd.jpg"
   }
 ]

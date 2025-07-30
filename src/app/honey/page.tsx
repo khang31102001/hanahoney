@@ -48,7 +48,8 @@ export default function Honey() {
   return (
     <main>
       <BannerHeader
-        backgroundImage="/images/banner_header_product.png"
+        className="w-full h-full"
+        backgroundImage="https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848103/beer-5433299_640_scfz7q.jpg"
         title="PURE BEE PRODUCTS"
         backgroundPosition=""
       ></BannerHeader>

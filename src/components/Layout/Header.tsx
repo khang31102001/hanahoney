@@ -9,7 +9,8 @@ import { usePathname } from 'next/navigation';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  const isActiveLink = (href: string) => {
+  const isActiveLink = (href: string):boolean => {
+    if(href === '/') return false
     return pathname === href;
   }
 
@@ -78,10 +79,10 @@ const Header = () => {
             <h2 className="text-3xl font-bold tracking-wide text-black text-center flex-1 -ml-8">HANA HONEY</h2>
 
           </div>
-          {/* Menu items: chỉ lấy từ Desktop Navigation */}
-          <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-lg font-semibold">
+  
+          <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-xl font-semibold ">
             {links.map((item, index) => (
-              <CustomLink key={index} href={item.href} className="bg-amber-600 py-4 border-b border-[#f3c96b]">
+              <CustomLink key={index} href={item.href} className=" py-4 border-b border-[#f3c96b]">
                 {item.label}
               </CustomLink>
             ))}
