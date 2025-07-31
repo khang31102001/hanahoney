@@ -102,7 +102,7 @@ const ContactInfor = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="my-8 p-6">
+        {/* <div className="my-8 p-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-center text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-wide">Contact Us</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -123,7 +123,7 @@ const ContactInfor = () => {
               <button className="text-xl text-white px-6 py-4">Send</button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Business Contact */}
         <div className="max-w-3xl mx-auto text-center space-y-4 p-6">

@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import CustomLink from '../loading-spiner/custom-link';
 import { usePathname } from 'next/navigation';
 // import { Button } from '@/components/ui/button';
@@ -40,7 +40,7 @@ const Header = () => {
           </button>
         </div>
         <div className="flex-shrink-0  md:w-full text-center p-1">
-          <h1 className="text-4xl md:text-5xl font-bold text-black ">HANNA&apos;S HONEY</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-black ">HANNA&apos;S HONEY</h1>
         </div>
 
         <div className="flex justify-between items-center h-16 font-body text-[1.3rem] font-inherit ">
@@ -82,9 +82,9 @@ const Header = () => {
   
           <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-xl font-semibold ">
             {links.map((item, index) => (
-              <CustomLink key={index} href={item.href} className=" py-4 border-b border-[#f3c96b]">
+              <a key={index} href={item.href} className=" py-4 border-b border-[#f3c96b]">
                 {item.label}
-              </CustomLink>
+              </a>
             ))}
           </nav>
         </div>

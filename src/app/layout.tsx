@@ -11,7 +11,7 @@ const poppins = Poppins({
   display: "swap",
 })
 
-const raleway =  Raleway({
+const raleway = Raleway({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-raleway",
@@ -19,33 +19,29 @@ const raleway =  Raleway({
 })
 export const metadata: Metadata = {
   title: {
-    default: "HANA HONEY - Premium Raw Honey from Australia",
+    default: "HANA HONEY - Raw Honey from Australia",
     template: "%s | HANA HONEY",
   },
   description:
-    "Discover sustainably harvested raw honey from Australia. Perfect for health, gifting, and premium lifestyle.",
-  keywords: [
-    "raw honey",
-    "hanahoney",
-    "Australian honey",
-    "WA honey",
-    "gift honey",
-    "natural sweetener",
-    "honey benefits",
-  ],
+    "Explore pure, natural Australian honey harvested sustainably. Premium gift packaging and international shipping available.",
+  keywords:
+    "raw honey, premium honey, Australian honey, HANA HONEY, gift honey, natural honey, organic honey, manuka honey, eucalyptus honey",
+  authors: [{ name: "HANA HONEY" }],
+  creator: "HANA HONEY",
+  publisher: "HANA HONEY",
   metadataBase: new URL("https://hanahoney.com.au"),
   alternates: {
     canonical: "https://hanahoney.com.au",
   },
   openGraph: {
-    title: "HANA HONEY - Premium Raw Honey from Australia",
+    title: "HANA HONEY - Raw Honey from Australia",
     description:
       "High-quality raw honey from Western Australia, harvested with care and perfect for wellness & gifting.",
     url: "https://hanahoney.com.au",
     siteName: "HANA HONEY",
     images: [
       {
-        url: "https://hanahoney.com.au/og-image.jpg", // Thay bằng ảnh thật
+        url: "https://hanahoney.com.au/images/hanahoney.jpg", // Thay bằng ảnh thật
         width: 1200,
         height: 630,
         alt: "Premium Australian Honey Gift Box",
@@ -59,7 +55,7 @@ export const metadata: Metadata = {
     title: "HANA HONEY - Premium Raw Honey from Australia",
     description:
       "Explore the taste of nature with premium honey sourced from Australia's wildflower regions.",
-    images: ["https://hanahoney.com.au/og-image.jpg"],
+    images: ["https://hanahoney.com.au/images/hanahoney.jpg"],
     creator: "@hanahoneyau", // Nếu có Twitter handle
   },
   icons: {
@@ -99,6 +95,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  category: "food",
 };
 
 
@@ -108,9 +105,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" 
-    className={`${poppins.variable} ${raleway.variable}`} 
-     style={
+    <html lang="en"
+      className={`${poppins.variable} ${raleway.variable}`}
+      style={
         {
           "--font-heading": "var(--font-poppins), ui-sans-serif, system-ui, sans-serif",
           "--font-body": "var(--font-raleway), ui-sans-serif, system-ui, sans-serif",
@@ -119,10 +116,10 @@ export default function RootLayout({
       }
     >
       <body className="bg-white text-gray-900 antialiased">
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
-        <SocialSidebar/>
+        <Footer />
+        <SocialSidebar />
       </body>
     </html>
   );

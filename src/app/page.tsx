@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "HANA HONEY",
     images: [
       {
-        url: "https://hanahoney.com.au/og-image.jpg", // Replace with your actual OG image
+        url: "https://hanahoney.com.au/images/hanahoney.jpg", // Replace with your actual OG image
         width: 1200,
         height: 630,
         alt: "HANA HONEY - Premium Australian Honey",
@@ -43,7 +43,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "HANA HONEY - Premium Raw Honey from Australia",
     description: "Pure and natural honey with elegant packaging. Great for gifting and wellness.",
-    images: ["https://hanahoney.com.au/og-image.jpg"],
+    images: ["https://hanahoney.com.au/images/hanahoney.jpg"],
   },
 };
 
