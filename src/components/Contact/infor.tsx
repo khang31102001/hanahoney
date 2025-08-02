@@ -103,7 +103,7 @@ const ContactInfor = () => {
           <div className="">
             <h3 className="text-xl font-medium text-gray-900">Australia</h3>
             <p className="font-semibold">Marege Native Foods</p>
-            <p>15 Birripa Court, Rosebery NT 083</p>
+            <p>15 Birripa Court, Rosebery NT 0832</p>
           </div>
           <p className="text-gray-700 leading-relaxed">
             <span className="text-xl text-gray-900 font-bold">Store opening and customer service hours:</span><br />
