@@ -220,7 +220,7 @@ export default function RootLayout({
       <body className="bg-white text-gray-900 antialiased">
         <Header />
         {children}
-        <Toaster richColors position="top-center" />
+        <Toaster richColors position="bottom-right" />
         <Footer />
         <SocialSidebar />
       </body>

@@ -10,11 +10,14 @@ interface formData {
 
 }
 const ContactInfor = () => {
-  const emailServiceID:string = "service_hw55msa";
-  const emailTemplate:string = "template_mumfvxj";
-  const publicKey_email:string = "trpFonASzT3DBQZUi";
+  const emailServiceID: string = "service_hw55msa";
+  const emailTemplate: string = "template_mumfvxj";
+  const publicKey_email: string = "trpFonASzT3DBQZUi";
   const [selected, setSelected] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [isSubmit, setIsSubmit] = useState<boolean>(false)
+  const [btnSend, setBtnSend] = useState<boolean>(false);
+
   const [formData, setFormData] = useState<formData | undefined>({
     name: "",
     email: "",
@@ -22,10 +25,19 @@ const ContactInfor = () => {
     message: ""
   });
   const [timestamp, setTimestamp] = useState("");
-  useEffect(()=>{
-   const nowDate = new Date().toISOString();
-   setTimestamp(nowDate);
-  },[])
+  useEffect(() => {
+    const nowDate = new Date().toISOString();
+    setTimestamp(nowDate);
+
+  }, []);
+  useEffect(() => {
+    if (formData?.name && formData.email != "") {
+      return setBtnSend(true)
+    }else{
+      return setBtnSend(false)
+    }
+    
+  }, [formData])
 
 
   const locations = [
@@ -48,30 +60,34 @@ const ContactInfor = () => {
       ...prev!,
       [name]: value
     }));
- 
+
   }
-  
-  const handleSubmit = async()=>{
-    try{
-     const sendEmail = await emailjs.send(
-      emailServiceID,
-      emailTemplate,
-      {
-        title: "Hana Honey",
-        timestamp: timestamp,
-        name: formData?.name,
-        email: formData?.email,
-        phone: formData?.message
-      },
-      publicKey_email
-     );
-       toast.success('🎉 Message sent successfully!');
+
+  const handleSubmit = () => {
+    setIsSubmit(true);
+    try {
+
+      const sendEmail = emailjs.send(
+        emailServiceID,
+        emailTemplate,
+        {
+          title: "Hana Honey",
+          timestamp: timestamp,
+          name: formData?.name,
+          email: formData?.email,
+          phone: formData?.message
+        },
+        publicKey_email
+      );
+      toast.success('🎉 Message sent successfully!');
       setFormData({ name: '', email: '', phone: 0, message: '' });
-    }catch(error){
+    } catch (error) {
       toast.error("Message sent Failed!")
-      console.log("send email failed: ",error);
+      console.log("send email failed: ", error);
+    } finally {
+      setIsSubmit(false);
     }
-   
+
   }
 
   return (
@@ -157,7 +173,7 @@ const ContactInfor = () => {
         <div className="my-8 p-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-center text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-wide">Contact Us</h1>
-              <input type="hidden" name="timestamp" value={timestamp} />
+            <input type="hidden" name="timestamp" value={timestamp} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="mb-5 w-full">
                 <input
@@ -212,15 +228,39 @@ const ContactInfor = () => {
               <textarea
                 value={formData?.message}
                 onChange={(e) => handleFormData(e)}
-                className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900 p-2" 
-                rows={5} 
+                className="w-full bg-honey-200 border border-gray-900 hover:border-2 hover:border-gray-900 p-2"
+                rows={5}
                 name="message"
                 maxLength={200}
                 placeholder="Enter message max 200 words..." />
             </div>
-            <div className="text-center bg-black text-white mb-5 w-full cursor-pointer">
-              <button onClick={handleSubmit}  className="text-xl text-white px-6 py-4">Send</button>
-            </div>
+            {btnSend && (
+              <div className="text-center bg-black text-white mb-5 w-full cursor-pointer rounded">
+                <button
+                  onClick={handleSubmit}
+                  disabled={isSubmit}
+                  className="text-xl px-6 py-4 w-full flex items-center justify-center"
+                >
+                  {isSubmit ? (
+                    // ✅ Spinner
+                    <svg className="animate-spin h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                      ></path>
+                    </svg>
+                  ) : (
+                    // ✅ Nút gửi
+                    'Send'
+                  )}
+                </button>
+              </div>
+
+            )}
+
+
           </div>
         </div>
 
