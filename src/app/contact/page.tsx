@@ -46,7 +46,7 @@ export default function Contact(){
       <BannerHeader title="Contact Us" className="w-full h-full" backgroundImage="/images/banner_contact.jpg">
         <div className="text-center max-auto px-6 h-full">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in">
-            We’re Here to Help
+            We are Here to Help
           </h1>
           <p className="text-xl md:text-2xl text-honey-600 mb-12 animate-fade-in">
             Have questions or want to collaborate? Reach out to us anytime.

@@ -42,11 +42,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
       
       {/* Black footer with product info */}
       <div className="bg-black text-white flex flex-col justify-between h-[200px]  p-4">
-        <h3 className="text-lg font-bold text-center mb-2 uppercase tracking-wide text-white line-clamp-2  min-h-12">
+        <h3 className="text-2xl md:text-xl  font-bold text-center mb-2 uppercase tracking-wide text-white line-clamp-2  min-h-12">
           {product.name}
         </h3>
          <div className="text-center mb-2">
-          <span className="text-sm lg:text-xl font-medium">{product.volume}</span>
+          <span className="text-xl lg:text-2xl font-medium">{product.volume}</span>
         </div>
         <div className="flex items-center justify-center mb-2">
           <div className="flex">{renderStars(product.rating)}</div>
@@ -54,9 +54,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </div>
        
         
-        <div className="text-center line-clamp-2">
+        {/* <div className="text-center line-clamp-2">
           <span className="text-orange-400 font-bold text-lg">{product.price}</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
