@@ -20,26 +20,26 @@ const raleway = Raleway({
 })
 export const metadata: Metadata = {
   title: {
-    default: "HANA HONEY - Raw Honey from Australia",
+    default: "HANNA HONEY - Raw Honey from Australia",
     template: "%s | HANNA HONEY",
   },
   description:
     "Explore pure, natural Australian honey harvested sustainably. Premium gift packaging and international shipping available.",
   keywords:
     "raw honey, premium honey, Australian honey, HANA HONEY, gift honey, natural honey, organic honey, manuka honey, eucalyptus honey",
-  authors: [{ name: "HANA HONEY" }],
-  creator: "HANA HONEY",
-  publisher: "HANA HONEY",
+  authors: [{ name: "HANNA HONEY" }],
+  creator: "HANNA HONEY",
+  publisher: "HANNA HONEY",
   metadataBase: new URL("https://hanahoney.com.au"),
   alternates: {
     canonical: "https://hanahoney.com.au",
   },
   openGraph: {
-    title: "HANA HONEY - Raw Honey from Australia",
+    title: "HANNA HONEY - Raw Honey from Australia",
     description:
       "High-quality raw honey from Western Australia, harvested with care and perfect for wellness & gifting.",
     url: "https://hanahoney.com.au",
-    siteName: "HANA HONEY",
+    siteName: "HANNA HONEY",
     images: [
       {
         url: "https://hanahoney.com.au/images/hanahoney.jpg", // Thay bằng ảnh thật
