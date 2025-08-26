@@ -1,0 +1,37 @@
+/* Ẩn thanh banner & balloon */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+body > .skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+}
+html, body { top: 0 !important; }
+
+/* Ẩn logo/link Google và text thừa trong gadget */
+.goog-logo-link,
+.goog-te-gadget span { display: none !important; }
+
+/* Option: thu nhỏ gadget về 0 để khỏi chiếm chỗ */
+.goog-te-gadget { font-size: 0 !important; }
+
+/* Gắn class .notranslate vào những phần không muốn dịch: */
+.notranslate { translate: no; }
+
+/* Giữ widget trong DOM để script hoạt động, nhưng giấu khỏi mắt người dùng */
+#google_translate_element {
+  position: fixed !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+

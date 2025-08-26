@@ -4,6 +4,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '../../styles/siwiper-custom.css'
 import OptimizedImage from '../ui/optimized-image';
 
 const ImageSlider = ()=> {

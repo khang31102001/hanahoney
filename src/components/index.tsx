@@ -15,6 +15,7 @@ export {default as ContactInfor} from './Contact/infor';
 export {default as PartnerShipIntro} from './Partnerships/PartnerShipIntro';
 export { default as ImageSlider} from './Partnerships/ImageSlider';
 export {default as PartnerTestimonials} from './Partnerships/PartnerTestimonials';
+export {default as TranslateSwitcher} from './GoogleTranslate/TranslateSwitcher';
 
 
 

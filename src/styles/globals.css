@@ -10,6 +10,9 @@
 @import "./components.css";
 @import "./utilities.css";
 @import "./responsive.css";
+@import "./translates-witcher.css";
+/* @import "./siwiper-custom.css"; */
+
 
 
 
@@ -175,6 +178,7 @@
 
   body {
     @apply bg-background text-foreground;
+   
     font-family: var(--font-body);
   }
 
@@ -187,3 +191,4 @@
     font-family: var(--font-heading);
   }
 }
+

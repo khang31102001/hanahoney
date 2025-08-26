@@ -25,8 +25,8 @@ const ListBlog = ({data}: BlogProps)=> {
     };
     if(!currentBlogs) return null;
     return(
-         <div className="content-for-layout focus-none" role="main" tabIndex={-1}>
-                <div className="main-site-container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
+         <div className="content-for-layout focus-none" tabIndex={-1}>
+                <div className="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
                     <h1 className="title--primary text-4xl font-extrabold ">Discover</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-8">
                         {currentBlogs.map((item, index) => {
