@@ -2,18 +2,18 @@
 
 import { useEffect, useRef } from "react";
 
-interface Props{
+interface Props {
   className?: string;
 }
 
-export default function TranslateSwitcher({ className }:Props) {
-   const countries = [
+export default function TranslateSwitcher({ className }: Props) {
+  const countries = [
     { flag: "🇦🇺", name: "English", code: "en" },
     { flag: "🇻🇳", name: "Vietnam", code: "vi" },
     { flag: "🇲🇾", name: "Malaysia", code: "ms" },
     { flag: "🇹🇭", name: "Thailand", code: "th" },
     { flag: "🇵🇭", name: "Philippines", code: "tl" },
-    { flag: "🇨🇳", name: "中文（简体）", code: "zh-CN" }, 
+    { flag: "🇨🇳", name: "中文（简体）", code: "zh-CN" },
   ];
   const injectedRef = useRef(false);
 
@@ -33,7 +33,7 @@ export default function TranslateSwitcher({ className }:Props) {
         },
         "google_translate_element"
       )
-     
+
     };
 
     // nạp script của Google Translate
@@ -51,12 +51,12 @@ export default function TranslateSwitcher({ className }:Props) {
 
   // mẹo đổi ngôn ngữ qua JS (ẩn UI gốc của Google nếu muốn)
   const changeLang = (lang: string) => {
-   const combo = document.querySelector<HTMLSelectElement>("select.goog-te-combo");
+    const combo = document.querySelector<HTMLSelectElement>("select.goog-te-combo");
     if (!combo) {
       setTimeout(() => changeLang(lang), 200);
       return;
     }
-    if(combo.value !== lang){
+    if (combo.value !== lang) {
       combo.value = lang;
       // bắn cả change + input cho chắc
       combo.dispatchEvent(new Event("change"));
@@ -77,19 +77,19 @@ export default function TranslateSwitcher({ className }:Props) {
       hover:border-amber-500 
       focus:border-r-amber-500 focus:ring-2
       focus:ring-amber-300/30 focus:outline-none
-        font-medium text-xl
+        font-medium text-sm md:text-xl
         rounded px-2 py-1
         transition-colors duration-300
         "
         onChange={(e) => changeLang(e.target.value)}
         defaultValue="en"
       >
-        {countries.map((c)=>{
-          return(
-            <option className="notranslate" key={c.code} value={c.code}>{c.flag} {c.name}</option>
+        {countries.map((c) => {
+          return (
+            <option className="notranslate text-sm md:text-xl" key={c.code} value={c.code}>{c.flag} {c.name}</option>
           )
         })}
-        
+
       </select>
     </div>
   );

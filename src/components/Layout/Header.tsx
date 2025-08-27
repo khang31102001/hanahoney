@@ -30,7 +30,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between text-xl h-14 px-4">
           <span className="leading-none flex items-center gap-2">
             <Phone size={24} className="text-honey-500"/> 
-            <a href="tel:+61432189874" className="text-xl font-medium hover:text-honey-500">(+61) 0432 189 874</a>
+            <a href="tel:+61432189874" className="text-sm md:text-xl font-medium hover:text-honey-500">(+61) 0432 189 874</a>
           </span>
           <TranslateSwitcher />
         </div>
