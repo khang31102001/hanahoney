@@ -2,18 +2,19 @@
 
 import { useEffect, useRef } from "react";
 
+
 interface Props {
   className?: string;
 }
 
 export default function TranslateSwitcher({ className }: Props) {
   const countries = [
-    { flag: "🇦🇺", name: "English", code: "en" },
-    { flag: "🇻🇳", name: "Vietnam", code: "vi" },
-    { flag: "🇲🇾", name: "Malaysia", code: "ms" },
-    { flag: "🇹🇭", name: "Thailand", code: "th" },
-    { flag: "🇵🇭", name: "Philippines", code: "tl" },
-    { flag: "🇨🇳", name: "中文（简体）", code: "zh-CN" },
+    { flag: "fi fi-au", name: "English", code: "en" },
+    { flag: "fi fi-vn", name: "Vietnam", code: "vi" },
+    { flag: "fi fi-my", name: "Malaysia", code: "ms" },
+    { flag: "fi fi-th", name: "Thailand", code: "th" },
+    { flag: "fi fi-ph", name: "Philippines", code: "tl" },
+    { flag: "fi fi-cn", name: "中文（简体）", code: "zh-CN" },
   ];
   const injectedRef = useRef(false);
 
@@ -80,13 +81,18 @@ export default function TranslateSwitcher({ className }: Props) {
         font-medium text-sm md:text-xl
         rounded px-2 py-1
         transition-colors duration-300
+        appearance-none
         "
         onChange={(e) => changeLang(e.target.value)}
         defaultValue="en"
       >
         {countries.map((c) => {
           return (
-            <option className="notranslate text-sm md:text-xl" key={c.code} value={c.code}>{c.flag} {c.name}</option>
+            <option className="notranslate text-gray-600 font-medium text-sm md:text-xl " key={c.code} value={c.code}>
+              <span className={c.flag}></span>
+              {c.name}
+            </option>
+            
           )
         })}
 

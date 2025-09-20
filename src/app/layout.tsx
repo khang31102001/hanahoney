@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 // ...existing code...
 import { Footer, Header, SocialSidebar } from "@/components";
 import { Toaster } from "sonner";
+import { MainLayout } from "@/pages/Layout/MainLayout";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -218,10 +219,10 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-white text-gray-900 antialiased">
-        <Header />
-        {children}
+        <MainLayout>
+             {children}
+        </MainLayout>       
         <Toaster richColors position="bottom-right" />
-        <Footer />
         <SocialSidebar />
       </body>
     </html>

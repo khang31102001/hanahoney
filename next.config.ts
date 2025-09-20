@@ -15,7 +15,8 @@ const nextConfig: NextConfig = {
        "res.cloudinary.com",
        "honeyforlife.com.au",
        "plus.unsplash.com",
-       "media.istockphoto.com"
+       "media.istockphoto.com",
+      
 
     ],
     
