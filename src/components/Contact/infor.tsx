@@ -67,7 +67,7 @@ const ContactInfor = () => {
     setIsSubmit(true);
     try {
 
-      const sendEmail = emailjs.send(
+      emailjs.send(
         emailServiceID,
         emailTemplate,
         {

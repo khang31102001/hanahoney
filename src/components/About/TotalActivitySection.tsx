@@ -1,8 +1,8 @@
 import OptimizedImage from "../ui/optimized-image";
 
-interface Props {
-    img?: Images[] | undefined
-}
+// interface Props {
+//     img?: Images[] | undefined
+// }
 interface Images {
     id: number;
     src: string;
@@ -65,7 +65,7 @@ const honeyCollection = [
         specialNote: "Why it’s Special: Among the highest antioxidant levels ever tested in honey worldwide."
     }
 ]
-const TotalActivitySection = ({ img }: Props) => {
+const TotalActivitySection = () => {
     return (
         <section className="container">
             <div className="max-w-7xl h-full mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

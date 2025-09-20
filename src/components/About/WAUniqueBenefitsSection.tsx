@@ -1,7 +1,7 @@
 
-interface Props {
-  img?: string[] | undefined
-}
+// interface Props {
+//   img?: string[] | undefined
+// }
 
 const westernAustraliaHighlight = {
     title: "Why Western Australia is Unique?",
@@ -28,7 +28,8 @@ const westernAustraliaHighlight = {
   };
   
 
-const  WAUniqueBenefitsSection = ({img}:Props)=> {
+const  WAUniqueBenefitsSection = ()=> {
+ 
     return(
         <section className="container">
         <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
