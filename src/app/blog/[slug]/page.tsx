@@ -18,8 +18,8 @@ export default async function BlogDetailPage(props: {params: paramsType} ) {
     const findBlog = await blog.find(item => item.slug === slug);
     if (!findBlog) return <div>Blog not found</div>;;
     return(
-        <main>
+        <div className="space-y-6">
             <BlogDetail data={findBlog} />    
-        </main>
+        </div>
     )
 }

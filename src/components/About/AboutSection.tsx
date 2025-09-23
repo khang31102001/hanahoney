@@ -21,7 +21,7 @@ const  AboutSection = ({img}:Props)=> {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start md:items-center">
               {/* left content */}
               <div className="space-y-4 max-w-xl ">
-                    <h2 className="text-3xl md:text-4xl text-gray-900 font-bold tracking-wide">About HANNA HONEY</h2>
+                    <h2 className="text-3xl md:text-4xl text-gray-900 font-bold tracking-wide">About HANNA&apos;S HONEY</h2>
                     <p className="text-gray-700 ">
                         At HANNA HONEY, we deliver more than just honey — we deliver nature’s purest treasure. Sourced exclusively from the pristine, untouched forests of Western Australia, one of the most bio-secure honey regions in the world, free from bee diseases and Varroa mites
                     </p>

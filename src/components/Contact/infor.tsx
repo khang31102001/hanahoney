@@ -123,7 +123,7 @@ const ContactInfor = () => {
           </div>
           <p className="text-gray-700 leading-relaxed">
             <span className="text-xl text-gray-900 font-bold">Store opening and customer service hours:</span><br />
-            Monday - Thursday: 10AM - 3PM
+            Monday - Thursday: 9AM - 5PM
           </p>
         </div>
 

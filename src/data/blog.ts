@@ -346,8 +346,8 @@ export const blog: Blog[] = [
     id: 9,
     name: "DOES HONEY EXPIRE? SHELF LIFE & STORAGE TIPS YOU NEED TO KNOW",
     slug: "does-honey-expire-shelf-life-and-storage-tips",
-    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751028599/honey-shelf-life_vuv9e0.jpg",
-    hoverImage: "https://res.cloudinary.com/dwqqve7ja/video/upload/v1752848105/267036_tiny_xofolw.mp4",
+    image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1758647445/78ae8a7252d5a84c775c75d4c2d5b978_n7vs7y.jpg",
+    hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1758647446/8d617d766835dc4525473ee6057c07d8_zfwddy.jpg",
     content: `
     <h2>Does Honey Expire? Shelf Life & Storage Tips You Need to Know</h2>
     <p>If you’ve found a jar of honey tucked away in your pantry for years, you might wonder: <strong>“Can I still use this?”</strong> The good news is — <b>real honey doesn’t expire</b> when stored properly.</p>

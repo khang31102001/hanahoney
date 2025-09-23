@@ -18,7 +18,7 @@ const  WhyChooseSection = ({img}:Props)=> {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center min-h-[576px]">
             <div className="space-y-4 w-full max-w-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-wide">
-                Why Choose HANNA HONEY?
+                Why Choose HANNA&apos;S HONEY?
               </h2>
               <ul className="list-disc text-gray-600 space-y-2 pl-6">
                 {description.map((desc, idx) => (
