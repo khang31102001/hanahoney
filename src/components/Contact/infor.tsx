@@ -98,7 +98,7 @@ const ContactInfor = () => {
           <div>
             <h1 className="text-3xl md:text-4xl text-gray-900">Visit us in-store or shop online 24/7</h1>
             <p className="text-gray-700 leading-relaxed">
-              Honna Honey is a Western Australian Beekeeping & Honey Company. You can purchase our delicious bio-active honey, premium bee products, and Mated Queen Bees in-store or online now.
+              Hanna&apos;s Honey is a Western Australian Beekeeping & Honey Company. You can purchase our delicious bio-active honey, premium bee products, and Mated Queen Bees in-store or online now.
             </p>
           </div>
           <div>

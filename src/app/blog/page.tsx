@@ -47,9 +47,9 @@ export const metadata: Metadata = {
 
 export default function Blog() {
     return(
-        <main className="min-h-screen bg-white mt-4">
+        <div className="min-h-screen bg-white mt-4">
             <ListBlog data={blog} />
             <ListVideo data={dataVideo}/>
-        </main>
+        </div>
     )
 }

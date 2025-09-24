@@ -1,4 +1,5 @@
 import { AboutSection, DailyUseSection, TotalActivitySection, WAUniqueBenefitsSection, WhyChooseSection } from '@/components';
+import CertificatesSection from '@/components/About/CertificatesSection';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -43,13 +44,13 @@ export const metadata: Metadata = {
 
 export default function About() {
     return (
-        <main>
+        <div>
             <AboutSection/>
             <WhyChooseSection/>
             <TotalActivitySection/> 
             <WAUniqueBenefitsSection/> 
             <DailyUseSection/>
-
-        </main>
+            <CertificatesSection/>
+        </div>
     );
 }

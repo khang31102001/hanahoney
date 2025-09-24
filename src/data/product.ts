@@ -26,7 +26,7 @@ export const products: Product[] = [
         price: "From 744.000 VND",
         volume: "500gr",
         image: "/images/1font-jarrah-46-500g.jpg",
-        hoverImage: "/images/1back-jarrah-46-500g.jpg" ,
+        hoverImage: "/collection/jarrah-combo2-3.jpg" ,
         rating: 5,
         reviews: 88
     },
@@ -56,7 +56,7 @@ export const products: Product[] = [
         price: "From 650.000 VND",
         volume: "500gr",
         image: "/images/4font-jarrah-60-500g.jpg",
-        hoverImage: "/images/4back-jarrah-60-500g.jpg" ,
+        hoverImage:"/collection/jarrah-combo2-2.jpg" ,
         rating: 4.8,
         reviews: 75
     },
@@ -66,7 +66,7 @@ export const products: Product[] = [
         price: "From 1.200.000 VND",
         volume: "1kg",
         image: "/images/4font-jarrah-60-500g.jpg",
-        hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753623711/z6835126950627_7084a6c81cd9212763423ead3c76dd66_c0zgt8.jpg",
+        hoverImage: "/collection/jarrah-combo2-1.jpg",
         rating: 4.9,
         reviews: 92
     },
@@ -86,7 +86,7 @@ export const products: Product[] = [
         price: "From 850.000 VND",
         volume: "500gr",
         image: "/images/7font-redgum-49.6-500g.jpg",
-        hoverImage: "/images/7back-redgum-49.6-500g.jpg" ,
+        hoverImage: "/collection/redgum-combo2-2.jpg" ,
         rating: 4.7,
         reviews: 82
     },
@@ -96,7 +96,7 @@ export const products: Product[] = [
         price: "From 2.500.000 VND",
         volume: "1kg",
         image: "/images/7font-redgum-49.6-500g.jpg",
-        hoverImage: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1753623711/z6835126950627_7084a6c81cd9212763423ead3c76dd66_c0zgt8.jpg",
+        hoverImage: "/collection/redgum-1.jpg" ,
         rating: 4.9,
         reviews: 167
     },
@@ -116,7 +116,7 @@ export const products: Product[] = [
         price: "From 720.000 VND",
         volume: "500gr",
         image: "/images/5font-backbutt-40.2-500g.jpg",
-        hoverImage: "/images/5back-backbutt-40.2-500g.jpg" ,
+        hoverImage: "/collection/backbutt-combo2-2.jpg" ,
         rating: 4.8,
         reviews: 140
     },
@@ -126,7 +126,7 @@ export const products: Product[] = [
         price: "From 720.000 VND",
         volume: "1kg",
         image: "/images/5font-backbutt-40.2-500g.jpg",
-        hoverImage: "https://media.istockphoto.com/id/2173119049/vi/anh/c%E1%BA%ADn-c%E1%BA%A3nh-ng%C6%B0%E1%BB%9Di-ph%E1%BB%A5-n%E1%BB%AF-th%C3%AAm-m%E1%BA%ADt-ong-v%C3%A0o-t%C3%A1ch-tr%C3%A0.jpg?s=612x612&w=0&k=20&c=RxdjjWr3iol_mmTWsJmkcuntzewfHhd6exr_zQf2r4k=",
+        hoverImage:"/collection/backbutt-combo2-1.jpg",
         rating: 4.2,
         reviews: 136
     }

@@ -31,7 +31,7 @@ const  WhyChooseSection = ({img}:Props)=> {
               <OptimizedImage
                 width="360"
                 height="360"
-                src="/images/img-why-choose.png"
+                src="/collection/combo4-2.jpg"
                 alt="images"
                 className="w-full h-full object-cover"
               />

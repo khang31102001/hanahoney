@@ -8,11 +8,11 @@ interface Images {
   src: string;
 }
 const images: Images[] = [
-    {id: 1, src: 'https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/473477zhz/image-99-hinh-anh-con-ong-mat-moi-nhat-de-thuong-nhat-hien-nay-168048051032227.jpg'},
-    {id: 2, src: 'https://cdnmedia.baotintuc.vn/Upload/YZmStSDTjb0M07hFJ2gA/files/2021/09/24/ong-240921.jpg'},
-    {id: 3, src: 'https://png.pngtree.com/thumb_back/fw800/background/20230322/pngtree-beekeeper-extracting-honey-from-honeycomb-with-hot-knife-photo-image_50333132.jpg'},
-    {id: 4, src: 'https://maydochuyendung.com/img/uploads/images/khuc-xa-ke/kiem-tra-mat-ong.jpg'},
-    {id: 5, src: 'https://vigift.vn/wp-content/uploads/2021/04/mat-ong-nhan.jpg'}
+    {id: 1, src: '/collection/combo4-1.jpg'},
+    {id: 2, src: '/collection/combo3-1.jpg'},
+    {id: 3, src: '/collection/jarrah-1sp-1.jpg'},
+    {id: 4, src: '/collection/redgum-1sp-1.jpg'},
+    {id: 5, src: '/collection/backbutt-1sp-1.jpg'}
 ]
 const  AboutSection = ({img}:Props)=> {
     return(
@@ -30,7 +30,7 @@ const  AboutSection = ({img}:Props)=> {
                     </p>
                 </div>
                 {/* right image */}
-                <div className="relative w-full max-w-xl h-[520px]">
+                <div className="relative  h-[520px]">
                     {/* Image 1: Top right */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex gap-3">
                         <div className="hexagon 
