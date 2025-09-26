@@ -46,7 +46,11 @@ export const metadata: Metadata = {
 export default function Partnerships() {
   return (
     <main>
-      <BannerHeader title="" className="w-full h-full" backgroundImage="/images/banner-partnetship.jpg">
+      <BannerHeader 
+      title="" 
+      className="h-[700px]" 
+      backgroundImage="/images/banner-partnetship.jpg"
+      >
         <div className="text-center max-auto px-6 h-full">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in">
             Together, We Bring Premium

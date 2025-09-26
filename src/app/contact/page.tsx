@@ -43,7 +43,11 @@ export const metadata: Metadata = {
 export default function Contact(){
   return (
     <main>
-      <BannerHeader title="Contact Us" className="w-full h-full" backgroundImage="/images/banner_contact.jpg">
+      <BannerHeader 
+      title="Contact Us" 
+      className="h-[700px]" 
+      backgroundImage="/images/banner_contact.jpg"
+      >
         <div className="text-center max-auto px-6 h-full">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in">
             We are Here to Help

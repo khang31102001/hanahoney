@@ -14,7 +14,7 @@ export interface ImageTextBlock {
 
 export const bannerData = {
   backgroundColor: '#f7d47a',
-  imageUrl: 'https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848117/tea-599227_640_klyszn.jpg',
+  imageUrl: '/images/hero-banner-home.jpg',
   heading: "HANA'S HONEY AUSTRALIA'S FINEST MEDICINAL HONEY  & BEE PRODUCTS",
   button: {
     label: "SHOP NOW",

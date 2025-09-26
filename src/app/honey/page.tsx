@@ -46,15 +46,15 @@ export const metadata: Metadata = {
 
 export default function Honey() {
   return (
-    <main>
+    <div className="">
       <BannerHeader
-        className="w-full h-full"
-        backgroundImage="https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848103/beer-5433299_640_scfz7q.jpg"
+        className="h-[700px]"
+        backgroundImage="/images/hero-banner-product.jpg"
         title="PURE BEE PRODUCTS"
         backgroundPosition=""
       ></BannerHeader>
       <ProductList />
 
-    </main>
+    </div>
   )
 }

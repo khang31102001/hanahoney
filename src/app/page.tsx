@@ -66,7 +66,7 @@ export default function Home() {
               alt=""
               className="w-full h-[700px] object-cover z-10"
               loading="lazy"
-            />
+            />                                        
 
             {/* Lớp phủ màu đen trong suốt */}
             <div className="absolute inset-0 bg-black/40 z-10" />
