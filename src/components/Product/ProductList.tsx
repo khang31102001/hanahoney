@@ -7,7 +7,7 @@ const ProductList = () =>{
       <div className="flex flex-col w-full h-full gap-8">
          <div className=" text-center max-w-3xl mx-auto px-4">
             <div className="block p-4 px-4">
-                <h2 className="text-black text-xl md:text-2xl font-extrabold md-4 leading-snug">
+                <h2 className="text-black  text-xl md:text-2xl lg:text-3xl font-extrabold md-4 leading-snug">
                     Discover Nature&apos;s Golden Bounty: <br className="hidden sm:block" />
                     Premium Bee Products!
                 </h2>

@@ -15,47 +15,112 @@ const honeyCollection = [
   {
     id: 1,
     img: "/collection/jarrah-1sp-2.jpg",
-    title: "The King of Antibacterial Honey",
-    source: "Sourced from Jarrah Trees (Eucalyptus marginata), unique to Western Australia.",
-    certifiedTA: "Certified TA: 46.5+",
-    healthBenefits: [
-      "Exceptionally strong antibacterial and antimicrobial power, scientifically proven stronger than many Manuka honeys.",
-      "Rapid wound healing, skin repair, and burn treatment.",
-      "Natural immune booster and gut health support.",
-      "High antioxidant levels protect against oxidative stress and support cardiovascular health."
-    ],
-    taste: "Taste: Deep amber color, smooth woody aroma, elegant natural sweetness.",
-    specialNote: "Why it’s Special: Up to 50 percent stronger antibacterial activity than Manuka UMF 10+."
+    title: "Extreme Jarrah, King of Antibacterial Honey",
+    special: "EXTREME JARRAH",
+    description: `
+    <p><em>From Jarrah Trees (Eucalyptus marginata), unique to Western Australia</em></p>
+
+  <p>This is one of the world’s rarest and most powerful honeys.<br>
+  <strong>Certified TA 60+</strong> — the highest recorded Jarrah rating, delivering antibacterial strength far beyond Manuka.</p>
+
+  <h2>Benefits</h2>
+  <ul class="list-inside list-disc space-y-2">
+    <li>Extreme antibacterial &amp; antimicrobial power</li>
+    <li>Supports wound healing, skin repair &amp; burns</li>
+    <li>Boosts immunity &amp; digestion</li>
+    <li>Rich antioxidants for heart &amp; cell protection</li>
+  </ul>
+
+  <h2>Taste</h2>
+  <p><em>Dark amber with a smooth woody aroma, offering a clean, delicate sweetness and a long, lingering finish.</em></p>
+
+  <h2>Why Special</h2>
+  <p>With <strong>TA 60+</strong>, EXTREME JARRAH is the rarest, strongest Jarrah honey—scientifically proven stronger than Manuka MGO 1700+.</p>
+
+  <p><strong>Size:</strong> 150g - 250g - 500g - 1000g</p>
+    `,
   },
   {
     id: 2,
     title: "Redgum (Marri) Honey – The Gentle Immune Booster",
     img: "/collection/redgum-1sp-1.jpg",
-    source: "Sourced from Jarrah Trees (Eucalyptus marginata), unique to Western Australia.",
-    certifiedTA: "Certified TA: 60+",
-    healthBenefits: [
-      "Exceptionally strong antibacterial and antimicrobial power, scientifically proven stronger than many Manuka honeys.",
-      "Rapid wound healing, skin repair, and burn treatment.",
-      "Natural immune booster and gut health support.",
-      "High antioxidant levels protect against oxidative stress and support cardiovascular health."
-    ],
-    taste: "Taste: Deep amber color, smooth woody aroma, elegant natural sweetness.",
-    specialNote: "Why it’s Special: Up to 50 percent stronger antibacterial activity than Manuka UMF 10+."
+    special: "SUPER RED GUM",
+    description: `
+    <p><em>Harvested from Marri (Redgum) Trees (Corymbia calophylla), unique to Western Australia</em></p>
+
+  <p>This rare honey ranks among the world’s most potent.<br>
+  <strong>Certified TA 49.6+</strong> — stronger than many Manuka honeys, delivering exceptional natural power.</p>
+
+  <h2>Benefits</h2>
+  <ul class="list-inside list-disc space-y-2">
+    <li>Superior antibacterial &amp; antimicrobial activity</li>
+    <li>Aids wound healing, skin repair &amp; burns</li>
+    <li>Boosts immunity &amp; supports digestion</li>
+    <li>Rich antioxidants for heart &amp; vitality</li>
+  </ul>
+
+  <h2>Taste</h2>
+  <p><em>Rich amber with a smooth, mellow aroma and a gentle, fruity sweetness with a clean finish.</em></p>
+
+  <h2>Why Special</h2>
+  <p>Equivalent to stronger antibacterial strength than Manuka honey rated MGO 1500+.</p>
+
+  <p><strong>Size:</strong> 150g - 250g - 500g - 1000g</p>
+    `,
   },
   {
     id: 3,
+    title: "Super Jarrah, King of Antibacterial Honey",
+    img: "/collection/jarrah-super-combo2-1.jpg",
+    special: "SUPER JARRAH",
+    description: `
+    <p><em>Sourced from Jarrah Trees (Eucalyptus marginata), unique to Western Australia.</em></p>
+
+  <p><strong>Certified TA 46.5+</strong></p>
+
+  <h2>Health Benefits</h2>
+  <ul class="list-inside list-disc space-y-2">
+    <li>Exceptionally strong antibacterial and antimicrobial power, scientifically proven stronger than many Manuka honeys.</li>
+    <li>Rapid wound healing, skin repair, and burn treatment.</li>
+    <li>Natural immune booster and gut health support.</li>
+    <li>High antioxidant levels protect against oxidative stress and support cardiovascular health.</li>
+  </ul>
+
+  <h2>Taste</h2>
+  <p><em>Dark amber with a smooth woody aroma, offering a clean, mellow sweetness and a lingering finish.</em></p>
+
+  <h2>Why it’s Special</h2>
+  <p>Equivalent to higher antibacterial strength than Manuka honey rated MGO 1400+.</p>
+
+  <p><strong>Size:</strong> 150g - 250g - 500g - 1000g</p>
+    `,
+  },
+  {
+    id: 4,
     title: "Blackbutt Honey – The Daily Wellness Tonic",
     img: "/collection/backbutt-combo2-3.jpg",
-    source: "Sourced from Blackbutt Trees (Eucalyptus patens), Western Australia.",
-    certifiedTA: "Certified TA: 40.2+",
-    healthBenefits: [
-      "High antioxidant and anti-inflammatory strength.",
-      "Supports cardiovascular health, anti-aging, and cellular protection.",
-      "Natural immune booster and gut health support.",
-      "Promotes skin regeneration and wound recovery. Naturally boosts daily energy levels."
-    ],
-    taste: "Taste: Rich sweetness with nutty undertones and silky mouthfeel.",
-    specialNote: "Why it’s Special: Among the highest antioxidant levels ever tested in honey worldwide."
+    special: "VERY STRONG BACKBUTT",
+    description: `
+   <p><em>Sourced from Blackbutt Trees (Eucalyptus patens), Western Australia.</em></p>
+
+  <p><strong>Certified TA 40.2+</strong></p>
+
+  <h2>Health Benefits</h2>
+  <ul class="list-inside list-disc space-y-2">
+    <li>High antioxidant and anti-inflammatory strength.</li>
+    <li>Supports cardiovascular health, anti-aging, and cellular protection.</li>
+    <li>Promotes skin regeneration and wound recovery.</li>
+    <li>Naturally boosts daily energy levels.</li>
+  </ul>
+
+  <h2>Taste</h2>
+  <p><em>Dark amber in color with a bold, rich sweetness. It carries gentle nutty and caramel-like notes, creating a smooth, silky finish.</em></p>
+
+  <h2>Why it’s Special</h2>
+  <p>Equivalent to stronger antibacterial strength than Manuka honey rated MGO 1250+.</p>
+
+ <p><strong>Size:</strong> 150g - 250g - 500g - 1000g</p>
+    `,
   }
 ]
 const TotalActivitySection = () => {
@@ -109,11 +174,14 @@ const TotalActivitySection = () => {
             >
               {/* Image side */}
               <div className="flex flex-col items-center gap-8">
+                <h3 className="text-lg text-center font-semibold uppercase tracking-widest text-gray-500">
+                  HANNA’S HONEY<br /> Collection
+                </h3>
                 <div className="hexagon w-64 h-72 overflow-hidden">
                   <OptimizedImage src={item.img} alt={item.title} className="w-full h-full object-cover" />
                 </div>
-                <h3 className="text-lg font-semibold uppercase tracking-widest text-gray-500">
-                  The Honey Hana Collection
+                <h3 className="text-2xl text-center font-bold uppercase tracking-widest text-honey-400">
+                  {item.special}
                 </h3>
               </div>
 
@@ -122,24 +190,11 @@ const TotalActivitySection = () => {
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
                   {String(index + 1).padStart(2, "0")} — {item.title}
                 </h2>
-                <p className="text-gray-700 leading-relaxed">{item.source}</p>
-                <p className="text-gray-700 leading-relaxed">{item.certifiedTA}</p>
 
-                <div className="space-y-2">
-                  <span className="block text-sm font-semibold text-gray-800">
-                    Health Benefits:
-                  </span>
-                  <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                    {item.healthBenefits.map((desc, idx) => (
-                      <li key={idx} className="leading-relaxed">
-                        {desc}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="space-y-2"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                >
                 </div>
-
-                <p className="text-gray-700 leading-relaxed">{item.taste}</p>
-                <p className="text-gray-700 leading-relaxed">{item.specialNote}</p>
               </div>
             </div>
           ))}

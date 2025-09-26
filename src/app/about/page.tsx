@@ -1,4 +1,4 @@
-import { AboutSection, DailyUseSection, TotalActivitySection, WAUniqueBenefitsSection, WhyChooseSection } from '@/components';
+import { AboutSection, DailyUseSection, OptimizedImage, TotalActivitySection, WAUniqueBenefitsSection, WhyChooseSection } from '@/components';
 import CertificatesSection from '@/components/About/CertificatesSection';
 import { Metadata } from 'next';
 
@@ -43,14 +43,24 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
-    return (
-        <div>
-            <AboutSection/>
-            <WhyChooseSection/>
-            <TotalActivitySection/> 
-            <WAUniqueBenefitsSection/> 
-            <DailyUseSection/>
-            <CertificatesSection/>
-        </div>
-    );
+  return (
+    <div className='container'>
+      <AboutSection />
+      <WhyChooseSection />
+      <TotalActivitySection />
+      <div className='w-full'>
+        <OptimizedImage
+          src='/images/img-these-for-ta.jpg'
+          alt=''
+          height={1080}
+          width={1400}
+          className='w-full h-full object-cover'
+        />
+      </div>
+      <WAUniqueBenefitsSection />
+
+      <DailyUseSection />
+      <CertificatesSection />
+    </div>
+  );
 }

@@ -94,9 +94,11 @@ export default function Home() {
           <div className="isolate">
             <div className="rich-text content-container gradient rich-text--full-width content-container--full-width">
               <div className="rich-text__blocks py-10 md:py-20">
-                <h1 className="text-1x1 md:text-3xl font-normal leading-tight">{richText1.title}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{richText1.title}</h1>
                 <div className="rich-text__text rte text-xl">
-                  {richText1.content}
+                   {richText1.content.map((des, index) => (
+                      <span key={index} dangerouslySetInnerHTML={{ __html: des }} />
+                    ))}
                   <div className="text-xl font-bold ">
                     {richText1.saleText.map((p, index) => (
                       <p key={index} dangerouslySetInnerHTML={{ __html: p }} />
@@ -113,7 +115,7 @@ export default function Home() {
           <div className="isolate">
             <div className="rich-text content-container gradient rich-text--full-width content-container--full-width">
               <div className="rich-text__blocks ">
-                <h1 className="h1 text-1x1 md:text-3xl font-normal leading-tight ">{richText2.title}</h1>
+                <h1 className="h1 text-2xl md:text-3xl font-normal leading-tight ">{richText2.title}</h1>
                 <VideoSection />
               </div>
 
@@ -127,9 +129,11 @@ export default function Home() {
           <div className="isolate">
             <div className="rich-text content-container gradient rich-text--full-width content-container--full-width">
               <div className="rich-text__blocks py-10 md:py-10">
-                <h1 className="text-1x1 md:text-3xl font-normal leading-tight">{textBlockSection.title}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{textBlockSection.title}</h1>
                 <div className="rich-text__text rte text-xl ">
-                  {textBlockSection.content}
+                   {textBlockSection.content.map((item, index) => (
+                      <span key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                    ))}
                   <div className="text-xl font-bold py-4 md:py-4">
                     {textBlockSection.saleText.map((p, index) => (
                       <p key={index} dangerouslySetInnerHTML={{ __html: p }} />
@@ -195,9 +199,13 @@ export default function Home() {
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                     {imageWithText2.title}
                   </h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {imageWithText2.description}
-                  </p>
+                  <div className='space-y-6'>
+                    {imageWithText2.description.map((des, index) => (
+                      <p key={index} className='text-lg text-gray-700 leading-relaxed' dangerouslySetInnerHTML={{ __html: des }} />
+                    ))}
+                  </div>
+                   
+                  
                 </div>
               </div>
             </div>
@@ -214,9 +222,9 @@ export default function Home() {
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                     {imageWithText3.title}
                   </h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {imageWithText3.description}
-                  </p>
+                  <div className="text-lg text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{__html: imageWithText3.description }}>
+                   
+                  </div>
                 </div>
               </div>
               {/* Image */}
@@ -247,8 +255,8 @@ export default function Home() {
                   <Image
                     src={imageWithText4.image.src}
                     alt={imageWithText4.image.alt}
-                    width={imageWithText4.image.width}
-                    height={imageWithText4.image.height}
+                    width={1080}
+                    height={1080}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
@@ -262,8 +270,8 @@ export default function Home() {
                     {imageWithText4.heading}
                   </h2>
                   <div
-                    className="text-lg text-gray-700 leading-relaxed prose max-w-none"
-                    dangerouslySetInnerHTML={{ __html: imageWithText4.text }}
+                    className="space-y-6 text-lg text-gray-700 leading-relaxed prose max-w-none"
+                    dangerouslySetInnerHTML={{ __html: imageWithText4.description }}
                   />
                 </div>
               </div>
@@ -277,13 +285,9 @@ export default function Home() {
           <div className="isolate">
             <div className="rich-text content-container gradient rich-text--full-width content-container--full-width">
               <div className="rich-text__blocks py-10 md:py-20">
-                <h1 className="text-1x1 md:text-3xl font-normal leading-tight">{textBlockSlider.title}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{textBlockSlider.title}</h1>
                 <div className="rich-text__text rte text-xl">
-                  <div className="text-xl">
-                    {textBlockSlider.content.map((p, index) => (
-                      <p key={index} dangerouslySetInnerHTML={{ __html: p }} />
-                    ))}
-                  </div>
+                  <div className="text-xl" dangerouslySetInnerHTML={{ __html: textBlockSlider.description }} ></div>
                 </div>
               </div>
             </div>
