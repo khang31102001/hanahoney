@@ -2,6 +2,7 @@
 import YouTube from 'react-youtube';
 import { useState } from 'react';
 import Image from 'next/image';
+import { FullscreenVideoPlayer } from '../ui/fullscreen-video-player';
 
 export const videoSection = {
   videoId: "5RLirWPNTLw",
@@ -12,9 +13,9 @@ export const videoSection = {
 const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // const handlePlay = () => {
-  //   setIsPlaying(true);
-  // };
+  const handlePlay = () => {
+    setIsPlaying(!isPlaying);
+  };
 
   const opts = {
     height: '100%',
@@ -31,8 +32,8 @@ const VideoSection = () => {
       <div className="max-w-5xl mx-auto py-6">
       <div className="relative rounded-xl overflow-hidden shadow-lg ">
         {!isPlaying ? (
-          <button onClick={() => setIsPlaying(true)} className="w-full h-full relative group aspect-video">
-            <Image width={2000} height={1000} src={videoSection.thumbnail} alt="honey video" className="object-cover w-full h-full" />
+          <button onClick={handlePlay} className="w-full h-full relative group aspect-video">
+            <Image width={2000} height={1000} src="https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885889/bees-6147460_640_qctdfk.jpg" alt="hannahoney" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="bg-white p-4 rounded-full shadow-md hover:scale-110 transition-transform">
@@ -43,9 +44,14 @@ const VideoSection = () => {
             </div>
           </button>
         ) : (
-          <div className="w-full h-full aspect-[16/10] min-h-[50px]">
-            <YouTube videoId={videoSection.videoId} opts={opts} className="w-full h-full" />
-          </div>
+          // <div className="w-full h-full aspect-[16/10] min-h-[50px]">
+          //   <YouTube videoId={videoSection.videoId} opts={opts} className="w-full h-full" />
+          // </div>
+          <FullscreenVideoPlayer 
+          src="https://res.cloudinary.com/dwqqve7ja/video/upload/v1759915291/4118263228975216252_llrgqt.mp4" 
+          poster='https://res.cloudinary.com/dwqqve7ja/image/upload/v1753885889/bees-6147460_640_qctdfk.jpg'
+          onClose={handlePlay} 
+          />
         )}
       </div>
 
