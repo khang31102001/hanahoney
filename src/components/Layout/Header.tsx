@@ -1,11 +1,10 @@
 "use client"
 import React, { useState } from 'react';
 import { Menu, Phone, X } from 'lucide-react';
-// import Link from 'next/link';
 import CustomLink from '../loading-spiner/custom-link';
 import { usePathname } from 'next/navigation';
 import TranslateSwitcher from '../GoogleTranslate/TranslateSwitcher';
-// import { Button } from '@/components/ui/button';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

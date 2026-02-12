@@ -33,7 +33,7 @@ export default function CustomLink({ href, children, className = "" }: CustomLin
       className={`inline-flex  items-center ${className} ${loading ? "opacity-75 cursor-wait" : ""}`}
     >
       {children}
-      {loading && <div className="ml-2  animate-spin rounded-full h-4 w-4 border-b-4 border-amber-600"></div>}
+      {loading && <div className="ml-2 animate-spin rounded-full h-4 w-4 border-b-4 border-amber-600"></div>}
     </a>
   )
 }
