@@ -6,12 +6,12 @@ import {
   bannerData,
   richText1,
   richText2,
-  textBlockSection,
+  textBlock1,
   imageWithText1,
   imageWithText2,
   imageWithText3,
   imageWithText4,
-  textBlockSlider,
+  textBlock2,
 } from '@/data/homeData';
 import Image from 'next/image';
 
@@ -96,14 +96,10 @@ export default function Home() {
               <div className="rich-text__blocks py-10 md:py-20">
                 <h1 className="text-2xl md:text-3xl font-bold leading-tight">{richText1.title}</h1>
                 <div className="rich-text__text rte text-xl">
-                   {richText1.content.map((des, index) => (
-                      <span key={index} dangerouslySetInnerHTML={{ __html: des }} />
+                   {richText1.content.map((content, index) => (
+                      <div key={index} dangerouslySetInnerHTML={{ __html: content }} />
                     ))}
-                  <div className="text-xl font-bold ">
-                    {richText1.saleText.map((p, index) => (
-                      <p key={index} dangerouslySetInnerHTML={{ __html: p }} />
-                    ))}
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -129,16 +125,12 @@ export default function Home() {
           <div className="isolate">
             <div className="rich-text content-container gradient rich-text--full-width content-container--full-width">
               <div className="rich-text__blocks py-10 md:py-10">
-                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{textBlockSection.title}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{textBlock1.title}</h1>
                 <div className="rich-text__text rte text-xl ">
-                   {textBlockSection.content.map((item, index) => (
-                      <span key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                   {textBlock1.content.map((content, index) => (
+                      <div key={index} dangerouslySetInnerHTML={{ __html: content }} />
                     ))}
-                  <div className="text-xl font-bold py-4 md:py-4">
-                    {textBlockSection.saleText.map((p, index) => (
-                      <p key={index} dangerouslySetInnerHTML={{ __html: p }} />
-                    ))}
-                  </div>
+    
                 </div>
               </div>
             </div>
@@ -155,9 +147,7 @@ export default function Home() {
                   <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                     {imageWithText1.title}
                   </h1>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {imageWithText1.description}
-                  </p>
+                  <div className="text-lg text-gray-700 leading-relaxed space-y-8" dangerouslySetInnerHTML={{ __html: imageWithText1.content }} />
                 </div>
               </div>
 
@@ -199,9 +189,9 @@ export default function Home() {
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                     {imageWithText2.title}
                   </h2>
-                  <div className='space-y-6'>
-                    {imageWithText2.description.map((des, index) => (
-                      <p key={index} className='text-lg text-gray-700 leading-relaxed' dangerouslySetInnerHTML={{ __html: des }} />
+                  <div >
+                    {imageWithText2.content.map((content, index) => (
+                      <div key={index} className='text-lg text-gray-700 leading-relaxed space-y-6' dangerouslySetInnerHTML={{ __html: content }} />
                     ))}
                   </div>
                    
@@ -222,7 +212,7 @@ export default function Home() {
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                     {imageWithText3.title}
                   </h2>
-                  <div className="text-lg text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{__html: imageWithText3.description }}>
+                  <div className="text-lg text-gray-700 leading-relaxed space-y-6" dangerouslySetInnerHTML={{__html: imageWithText3.content }}>
                    
                   </div>
                 </div>
@@ -271,7 +261,7 @@ export default function Home() {
                   </h2>
                   <div
                     className="space-y-6 text-lg text-gray-700 leading-relaxed prose max-w-none"
-                    dangerouslySetInnerHTML={{ __html: imageWithText4.description }}
+                    dangerouslySetInnerHTML={{ __html: imageWithText4.content }}
                   />
                 </div>
               </div>
@@ -285,9 +275,9 @@ export default function Home() {
           <div className="isolate">
             <div className="rich-text content-container gradient rich-text--full-width content-container--full-width">
               <div className="rich-text__blocks py-10 md:py-20">
-                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{textBlockSlider.title}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold leading-tight">{textBlock2.title}</h1>
                 <div className="rich-text__text rte text-xl">
-                  <div className="text-xl" dangerouslySetInnerHTML={{ __html: textBlockSlider.description }} ></div>
+                  <div className="text-xl" dangerouslySetInnerHTML={{ __html: textBlock2.content }} ></div>
                 </div>
               </div>
             </div>

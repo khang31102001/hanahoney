@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 // ...existing code...
 import { Toaster } from "sonner";
-import MainLayout from "@/pages/Layout/MainLayout";
+import MainLayout from "@/layout/main-layout";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
